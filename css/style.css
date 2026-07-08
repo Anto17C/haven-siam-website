@@ -110,24 +110,15 @@ img {
 
 /* ---------- Hero ---------- */
 .hero {
-  position: relative;
+  display: flex;
+  align-items: center;
   background: var(--cream);
-  overflow: hidden;
-}
-
-.hero-bg-image {
-  width: 100%;
-  height: auto;
-  display: block;
+  min-height: 420px;
 }
 
 .hero-copy {
-  position: absolute;
-  top: 50%;
-  left: 2rem;
-  transform: translateY(-50%);
-  max-width: 42%;
-  z-index: 2;
+  flex: 1.05;
+  padding: 3.5rem 1.5rem 3.5rem 3rem;
 }
 
 .eyebrow {
@@ -168,6 +159,16 @@ img {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
+}
+
+.hero-image {
+  flex: 0.95;
+  align-self: stretch;
+  min-height: 420px;
+  background-color: var(--teal-700);
+  background-image: url('../assets/hero-bangkok-path.webp');
+  background-size: cover;
+  background-position: center;
 }
 
 /* ---------- Pillar strip ---------- */
@@ -431,13 +432,9 @@ img {
 
 /* ---------- Responsive ---------- */
 @media (max-width: 860px) {
-  .hero-copy {
-    position: static;
-    transform: none;
-    max-width: 100%;
-    padding: 2rem 2rem 1.5rem;
-    background: var(--cream);
-  }
+  .hero { flex-direction: column; }
+  .hero-copy { padding: 2.5rem 1.5rem 1.5rem; }
+  .hero-image { width: 100%; min-height: 220px; }
   .dark-section-inner { flex-direction: column; }
   .steps-grid { grid-template-columns: 1fr; max-width: 100%; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
