@@ -225,6 +225,14 @@ img {
   overflow: hidden;
 }
 
+.page-hero {
+  height: 400px;
+}
+
+.page-hero .hero-copy {
+  max-width: 620px;
+}
+
 .hero-bg-image {
   position: absolute;
   top: 0;
@@ -772,14 +780,6 @@ img {
 .nav-links a[aria-current="page"] {
   color: var(--teal-950);
   font-weight: 600;
-}
-
-.page-hero {
-  height: 400px;
-}
-
-.page-hero .hero-copy {
-  max-width: 620px;
 }
 
 .services-grid-section {
