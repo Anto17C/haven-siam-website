@@ -84,7 +84,7 @@ img {
   gap: 30px;
   font-size: 13.5px;
   color: var(--ink-muted);
-  margin-left: auto;
+  margin-left: 260px;
 }
 
 .lang-link-mobile {
@@ -93,6 +93,10 @@ img {
 
 .nav-links a:hover {
   color: var(--coral-600);
+}
+
+.nav-cta {
+  margin-left: auto;
 }
 
 .nav-toggle {
@@ -115,6 +119,7 @@ img {
   align-items: center;
   gap: 6px;
   font-size: 13px;
+  margin-left: 28px;
   margin-right: 24px;
 }
 
