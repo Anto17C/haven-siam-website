@@ -143,10 +143,10 @@ img {
   background: linear-gradient(
     90deg,
     rgba(4, 52, 44, 0.94) 0%,
-    rgba(4, 52, 44, 0.88) 25%,
-    rgba(4, 52, 44, 0.55) 50%,
-    rgba(4, 52, 44, 0.15) 72%,
-    rgba(4, 52, 44, 0) 88%
+    rgba(4, 52, 44, 0.90) 32%,
+    rgba(4, 52, 44, 0.65) 55%,
+    rgba(4, 52, 44, 0.25) 76%,
+    rgba(4, 52, 44, 0) 92%
   );
 }
 
@@ -165,7 +165,7 @@ img {
 }
 
 .hero-copy {
-  max-width: 520px;
+  max-width: 580px;
 }
 
 .hero .eyebrow {
@@ -187,14 +187,14 @@ img {
   font-weight: 600;
   line-height: 1.2;
   color: var(--cream);
-  max-width: 560px;
+  max-width: 580px;
   margin-bottom: 20px;
 }
 
 .hero-copy .subhead {
   font-size: 15.5px;
   color: var(--teal-100);
-  max-width: 440px;
+  max-width: 500px;
   line-height: 1.65;
   margin-bottom: 12px;
 }
@@ -353,7 +353,6 @@ img {
 .tier-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  align-items: start;
   gap: 18px;
   max-width: 960px;
   margin: 0 auto;
@@ -363,6 +362,8 @@ img {
   background: var(--cream);
   border-radius: 14px;
   padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .tier-card.featured {
@@ -371,28 +372,34 @@ img {
   box-shadow: 0 6px 20px rgba(4, 52, 44, 0.06);
 }
 
-.tier-icon-img {
-  width: 64px;
-  height: 64px;
-  object-fit: contain;
-  margin-bottom: 14px;
-  border-radius: 10px;
-}
-
 .tier-eyebrow {
   font-size: 12px;
   font-weight: 600;
-  margin-bottom: 6px;
+  margin-bottom: 14px;
 }
 
 .tier-card:not(.featured) .tier-eyebrow { color: var(--teal-700); }
 .tier-card.featured .tier-eyebrow { color: var(--coral-700); }
 
+.tier-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.tier-icon-img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
 .tier-title {
   font-family: var(--font-display);
-  font-size: 19px;
+  font-size: 18px;
   font-weight: 600;
-  margin-bottom: 14px;
   color: var(--teal-950);
 }
 
@@ -427,6 +434,7 @@ img {
   color: var(--ink-faint);
   font-style: italic;
   padding-top: 14px;
+  margin-top: auto;
   border-top: 0.5px solid var(--border-light);
 }
 
