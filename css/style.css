@@ -116,33 +116,60 @@ img {
 
 /* ---------- Hero ---------- */
 .hero {
-  background: var(--cream);
-  padding: 0 2rem;
-}
-
-.hero-inner {
-  max-width: 1160px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  padding: 3.5rem 0;
-}
-
-.hero-copy {
-  flex: 3;
-  min-width: 0;
-}
-
-.hero-image-col {
-  flex: 2;
-  min-width: 0;
+  position: relative;
+  height: 620px;
+  overflow: hidden;
 }
 
 .hero-bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
   display: block;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(4, 52, 44, 0.94) 0%,
+    rgba(4, 52, 44, 0.88) 25%,
+    rgba(4, 52, 44, 0.55) 50%,
+    rgba(4, 52, 44, 0.15) 72%,
+    rgba(4, 52, 44, 0) 88%
+  );
+}
+
+.hero-inner {
+  position: relative;
+  height: 100%;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.hero-inner-content {
+  max-width: 1160px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.hero-copy {
+  max-width: 520px;
+}
+
+.hero .eyebrow {
+  color: var(--coral-300);
 }
 
 .eyebrow {
@@ -159,14 +186,14 @@ img {
   font-size: 40px;
   font-weight: 600;
   line-height: 1.2;
-  color: var(--teal-950);
+  color: var(--cream);
   max-width: 560px;
   margin-bottom: 20px;
 }
 
 .hero-copy .subhead {
   font-size: 15.5px;
-  color: var(--ink-muted);
+  color: var(--teal-100);
   max-width: 440px;
   line-height: 1.65;
   margin-bottom: 12px;
@@ -174,7 +201,7 @@ img {
 
 .hero-copy .supporting {
   font-size: 13.5px;
-  color: var(--ink-faint);
+  color: rgba(225, 245, 238, 0.75);
   font-style: italic;
   margin-bottom: 26px;
 }
@@ -188,17 +215,17 @@ img {
 /* ---------- Pillar strip ---------- */
 .pillar-strip {
   position: relative;
-  padding: 3rem 2rem 2.5rem;
+  padding: 3.5rem 2rem 3rem;
   background: var(--white);
 }
 
 .pillar-path {
   position: absolute;
-  top: 58px;
+  top: 88px;
   left: 12%;
   right: 12%;
   height: 2px;
-  border-top: 1.5px dashed var(--coral-300);
+  border-top: 2px dashed var(--coral-300);
 }
 
 .pillar-row {
@@ -206,30 +233,30 @@ img {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 24px;
-  max-width: 720px;
+  gap: 32px;
+  max-width: 860px;
   margin: 0 auto;
 }
 
 .pillar {
-  width: 120px;
+  width: 150px;
   text-align: center;
 }
 
 .pillar-icon {
-  width: 44px;
-  height: 44px;
+  width: 64px;
+  height: 64px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 10px;
+  margin: 0 auto 14px;
   background: var(--white);
   border: 2px solid var(--white);
   box-shadow: 0 0 0 1px var(--border-light);
 }
 
-.pillar-icon svg { width: 20px; height: 20px; }
+.pillar-icon svg { width: 30px; height: 30px; }
 
 .pillar.teal .pillar-icon { background: var(--teal-100); }
 .pillar.teal .pillar-icon svg { stroke: var(--teal-700); }
@@ -238,7 +265,7 @@ img {
 .pillar.coral .pillar-icon svg { stroke: var(--coral-700); }
 
 .pillar-label {
-  font-size: 12.5px;
+  font-size: 15px;
   font-weight: 500;
   color: var(--teal-950);
 }
@@ -326,6 +353,7 @@ img {
 .tier-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  align-items: start;
   gap: 18px;
   max-width: 960px;
   margin: 0 auto;
@@ -364,14 +392,42 @@ img {
   font-family: var(--font-display);
   font-size: 19px;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 14px;
   color: var(--teal-950);
 }
 
-.tier-desc {
+.tier-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 14px;
+}
+
+.tier-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
   font-size: 13.5px;
   color: var(--ink-muted);
-  line-height: 1.6;
+  line-height: 1.5;
+  margin-bottom: 9px;
+}
+
+.tier-list li svg {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+}
+
+.tier-card:not(.featured) .tier-list li svg { color: var(--teal-700); }
+.tier-card.featured .tier-list li svg { color: var(--coral-700); }
+
+.tier-closing {
+  font-size: 12.5px;
+  color: var(--ink-faint);
+  font-style: italic;
+  padding-top: 14px;
+  border-top: 0.5px solid var(--border-light);
 }
 
 /* ---------- Trust strip ---------- */
@@ -446,9 +502,11 @@ img {
 
 /* ---------- Responsive ---------- */
 @media (max-width: 860px) {
-  .hero-inner { flex-direction: column; padding: 2rem 0; }
-  .hero-copy { flex: none; width: 100%; }
-  .hero-image-col { flex: none; width: 100%; order: -1; }
+  .hero { height: 480px; }
+  .hero-overlay {
+    background: linear-gradient(180deg, rgba(4,52,44,0.55) 0%, rgba(4,52,44,0.88) 55%, rgba(4,52,44,0.94) 100%);
+  }
+  .hero-copy { max-width: 100%; }
   .dark-section-inner { flex-direction: column; }
   .steps-grid { grid-template-columns: 1fr; max-width: 100%; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
