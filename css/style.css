@@ -325,11 +325,34 @@ img {
 
 .pillar-path {
   position: absolute;
-  top: 88px;
+  top: 32px;
   left: 12%;
   right: 12%;
   height: 2px;
   border-top: 2px dashed var(--coral-300);
+}
+
+.pillar-eyebrow {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.pillar-heading {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--teal-950);
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.pillar-description {
+  font-size: 15px;
+  color: var(--ink-muted);
+  line-height: 1.65;
+  text-align: center;
+  max-width: 620px;
+  margin: 0 auto 2.5rem;
 }
 
 .pillar-row {
@@ -345,6 +368,13 @@ img {
 .pillar {
   width: 150px;
   text-align: center;
+  text-decoration: none;
+  display: block;
+  transition: transform 0.15s ease;
+}
+
+.pillar:hover {
+  transform: translateY(-3px);
 }
 
 .pillar-icon {
@@ -618,16 +648,24 @@ img {
 }
 
 .icon-link svg {
-  width: 22px;
-  height: 22px;
+  width: 24px;
+  height: 24px;
 }
 
-.icon-phone, .icon-email {
-  color: var(--teal-100);
+.icon-phone {
+  color: var(--teal-700);
 }
 
-.icon-phone:hover, .icon-email:hover {
-  color: var(--white);
+.icon-phone:hover {
+  color: var(--teal-400);
+}
+
+.icon-email {
+  color: #EA4335;
+}
+
+.icon-email:hover {
+  opacity: 0.85;
 }
 
 .icon-whatsapp {
@@ -636,11 +674,6 @@ img {
 
 .icon-whatsapp:hover {
   opacity: 0.8;
-}
-
-.icon-line svg {
-  width: 26px;
-  height: 26px;
 }
 
 .icon-line:hover {
