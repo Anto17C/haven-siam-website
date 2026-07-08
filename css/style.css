@@ -116,41 +116,33 @@ img {
 
 /* ---------- Hero ---------- */
 .hero {
-  position: relative;
   background: var(--cream);
-  overflow: hidden;
-  height: 580px;
+  padding: 0 2rem;
+}
+
+.hero-inner {
+  max-width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 3.5rem 0;
+}
+
+.hero-copy {
+  flex: 3;
+  min-width: 0;
+}
+
+.hero-image-col {
+  flex: 2;
+  min-width: 0;
 }
 
 .hero-bg-image {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
+  height: auto;
   display: block;
-}
-
-.hero-inner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding: 0 2rem;
-  display: flex;
-  align-items: center;
-  pointer-events: none;
-}
-
-.hero-inner-content {
-  max-width: 1160px;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.hero-copy {
-  max-width: 46%;
-  pointer-events: auto;
 }
 
 .eyebrow {
@@ -454,14 +446,9 @@ img {
 
 /* ---------- Responsive ---------- */
 @media (max-width: 860px) {
-  .hero { height: auto; }
-  .hero-bg-image { height: auto; object-fit: initial; }
-  .hero-inner { position: static; padding: 0; display: block; }
-  .hero-copy {
-    max-width: 100%;
-    padding: 2rem 2rem 1.5rem;
-    background: var(--cream);
-  }
+  .hero-inner { flex-direction: column; padding: 2rem 0; }
+  .hero-copy { flex: none; width: 100%; }
+  .hero-image-col { flex: none; width: 100%; order: -1; }
   .dark-section-inner { flex-direction: column; }
   .steps-grid { grid-template-columns: 1fr; max-width: 100%; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
