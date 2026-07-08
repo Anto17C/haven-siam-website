@@ -505,11 +505,22 @@ img {
   margin: 0 auto;
   font-size: 12px;
   color: var(--teal-100);
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.footer-disclaimer {
+  color: rgba(225, 245, 238, 0.55);
+  text-align: right;
+  max-width: 480px;
 }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 860px) {
+  .footer-bottom { flex-direction: column; gap: 10px; }
+  .footer-disclaimer { text-align: left; max-width: 100%; }
   .hero { height: 480px; }
   .hero-overlay {
     background: linear-gradient(180deg, rgba(4,52,44,0.55) 0%, rgba(4,52,44,0.88) 55%, rgba(4,52,44,0.94) 100%);
