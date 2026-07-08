@@ -87,7 +87,7 @@ img {
   color: var(--ink-muted);
 }
 
-.nav-lang-mobile {
+.lang-link-mobile {
   display: none;
 }
 
@@ -137,7 +137,7 @@ img {
 
 .sticky-whatsapp {
   position: fixed;
-  bottom: 24px;
+  bottom: 92px;
   right: 24px;
   width: 56px;
   height: 56px;
@@ -162,7 +162,7 @@ img {
 
 .scroll-top-btn {
   position: fixed;
-  bottom: 92px;
+  bottom: 24px;
   right: 24px;
   width: 44px;
   height: 44px;
@@ -292,7 +292,7 @@ img {
   line-height: 1.2;
   color: var(--cream);
   max-width: 580px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .hero-copy .subhead {
@@ -700,15 +700,15 @@ img {
   }
   .nav-links.open { display: flex; }
   .nav-links a { padding: 10px 0; }
-  .nav-lang-mobile {
-    display: block;
-    border-top: 0.5px solid var(--border-light);
-    margin-top: 6px;
-    padding-top: 14px !important;
-    color: var(--ink-muted);
-    font-size: 13px;
-  }
   .lang-switch { display: none; }
+  .lang-link-mobile {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--ink-muted);
+    margin-right: 2px;
+  }
+  .lang-link-mobile:hover { color: var(--teal-950); }
   .nav-toggle { display: inline-flex; }
 }
 
