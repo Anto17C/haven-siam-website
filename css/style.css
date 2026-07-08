@@ -373,9 +373,9 @@ img {
 }
 
 .tier-eyebrow {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
-  margin-bottom: 14px;
+  margin-bottom: 16px;
 }
 
 .tier-card:not(.featured) .tier-eyebrow { color: var(--teal-700); }
@@ -389,8 +389,8 @@ img {
 }
 
 .tier-icon-img {
-  width: 48px;
-  height: 48px;
+  width: 54px;
+  height: 54px;
   object-fit: contain;
   border-radius: 10px;
   flex-shrink: 0;
@@ -398,7 +398,7 @@ img {
 
 .tier-title {
   font-family: var(--font-display);
-  font-size: 18px;
+  font-size: 23px;
   font-weight: 600;
   color: var(--teal-950);
 }
@@ -412,25 +412,25 @@ img {
 .tier-list li {
   display: flex;
   align-items: flex-start;
-  gap: 9px;
-  font-size: 13.5px;
+  gap: 10px;
+  font-size: 15px;
   color: var(--ink-muted);
-  line-height: 1.5;
-  margin-bottom: 9px;
+  line-height: 1.55;
+  margin-bottom: 11px;
 }
 
 .tier-list li svg {
   flex-shrink: 0;
-  width: 16px;
-  height: 16px;
-  margin-top: 2px;
+  width: 18px;
+  height: 18px;
+  margin-top: 1px;
 }
 
 .tier-card:not(.featured) .tier-list li svg { color: var(--teal-700); }
 .tier-card.featured .tier-list li svg { color: var(--coral-700); }
 
 .tier-closing {
-  font-size: 12.5px;
+  font-size: 14px;
   color: var(--ink-faint);
   font-style: italic;
   padding-top: 14px;
