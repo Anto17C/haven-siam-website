@@ -59,11 +59,17 @@ img {
 
 /* ---------- Navbar ---------- */
 .navbar {
+  padding: 0 2rem;
+  border-bottom: 0.5px solid var(--border-light);
+}
+
+.navbar-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1.15rem 2rem;
-  border-bottom: 0.5px solid var(--border-light);
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 1.15rem 0;
 }
 
 .logo {
@@ -110,15 +116,41 @@ img {
 
 /* ---------- Hero ---------- */
 .hero {
+  position: relative;
+  background: var(--cream);
+  overflow: hidden;
+  height: 580px;
+}
+
+.hero-bg-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.hero-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0 2rem;
   display: flex;
   align-items: center;
-  background: var(--cream);
-  min-height: 420px;
+  pointer-events: none;
+}
+
+.hero-inner-content {
+  max-width: 1160px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .hero-copy {
-  flex: 1.05;
-  padding: 3.5rem 1.5rem 3.5rem 3rem;
+  max-width: 46%;
+  pointer-events: auto;
 }
 
 .eyebrow {
@@ -159,16 +191,6 @@ img {
   display: flex;
   gap: 12px;
   flex-wrap: wrap;
-}
-
-.hero-image {
-  flex: 0.95;
-  align-self: stretch;
-  min-height: 420px;
-  background-color: var(--teal-700);
-  background-image: url('../assets/hero-bangkok-path.webp');
-  background-size: cover;
-  background-position: center;
 }
 
 /* ---------- Pillar strip ---------- */
@@ -432,9 +454,14 @@ img {
 
 /* ---------- Responsive ---------- */
 @media (max-width: 860px) {
-  .hero { flex-direction: column; }
-  .hero-copy { padding: 2.5rem 1.5rem 1.5rem; }
-  .hero-image { width: 100%; min-height: 220px; }
+  .hero { height: auto; }
+  .hero-bg-image { height: auto; object-fit: initial; }
+  .hero-inner { position: static; padding: 0; display: block; }
+  .hero-copy {
+    max-width: 100%;
+    padding: 2rem 2rem 1.5rem;
+    background: var(--cream);
+  }
   .dark-section-inner { flex-direction: column; }
   .steps-grid { grid-template-columns: 1fr; max-width: 100%; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
