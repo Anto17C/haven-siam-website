@@ -92,7 +92,7 @@ img {
 }
 
 .nav-links a:hover {
-  color: var(--teal-950);
+  color: var(--coral-600);
 }
 
 .nav-toggle {
@@ -132,7 +132,7 @@ img {
 }
 
 .lang-link:hover {
-  color: var(--teal-950);
+  color: var(--coral-600);
 }
 
 .sticky-whatsapp {
@@ -652,43 +652,21 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: opacity 0.15s ease;
 }
 
-.icon-link svg {
-  width: 24px;
+.icon-link img {
   height: 24px;
+  width: auto;
+  display: block;
 }
 
-.icon-phone {
-  color: var(--teal-700);
-}
-
-.icon-phone:hover {
-  color: var(--teal-400);
-}
-
-.icon-email {
-  color: #EA4335;
-}
-
-.icon-email:hover {
-  opacity: 0.85;
-}
-
-.icon-whatsapp {
-  color: #25D366;
-}
-
-.icon-whatsapp:hover {
-  opacity: 0.8;
-}
-
-.icon-line:hover {
+.icon-link:hover {
   opacity: 0.8;
 }
 
 .footer-col a:hover {
-  color: var(--white);
+  color: var(--coral-600);
 }
 
 .footer-bottom {
@@ -748,7 +726,7 @@ img {
     color: var(--ink-muted);
     margin-right: 2px;
   }
-  .lang-link-mobile:hover { color: var(--teal-950); }
+  .lang-link-mobile:hover { color: var(--coral-600); }
   .nav-toggle { display: inline-flex; }
 }
 
