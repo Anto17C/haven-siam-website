@@ -786,7 +786,7 @@ img {
   .footer-disclaimer { text-align: center; max-width: 100%; }
   .hero { height: auto; }
   .page-hero { height: auto; }
-  .hero-inner { height: auto; padding: 6rem 2rem; }
+  .page-hero .hero-inner { height: auto; padding: 4rem 2rem; }
   .hero-overlay {
     background: linear-gradient(180deg, rgba(4,52,44,0.55) 0%, rgba(4,52,44,0.88) 55%, rgba(4,52,44,0.94) 100%);
   }
