@@ -1219,13 +1219,32 @@ img {
 }
 
 .form-status {
-  font-size: 13.5px;
-  margin-top: 14px;
+  display: none;
+  font-size: 14px;
+  line-height: 1.55;
+  margin-top: 16px;
+  padding: 13px 16px;
+  border-radius: 8px;
   text-align: center;
+  outline: none;
 }
 
-.form-status.success { color: var(--teal-700); }
-.form-status.error { color: var(--coral-700); }
+.form-status.success,
+.form-status.error {
+  display: block;
+}
+
+.form-status.success {
+  color: var(--teal-950);
+  background: var(--teal-100);
+  border: 1px solid rgba(15, 110, 86, 0.28);
+}
+
+.form-status.error {
+  color: var(--coral-700);
+  background: var(--coral-100);
+  border: 1px solid rgba(216, 90, 48, 0.28);
+}
 
 .contact-alt {
   text-align: center;

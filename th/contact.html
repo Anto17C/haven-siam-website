@@ -149,7 +149,7 @@
 
         <button type="submit" class="btn btn-coral form-submit" id="submitBtn">ส่งข้อความ</button>
 
-        <p class="form-status" id="formStatus" role="status"></p>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite" tabindex="-1"></p>
       </form>
 
       <div class="contact-alt">
@@ -278,14 +278,20 @@
             form.reset();
             status.textContent = 'ขอบคุณครับ/ค่ะ ส่งเรียบร้อยแล้ว เราจะติดต่อกลับภายในหนึ่งวันทำการ';
             status.className = 'form-status success';
+            status.focus();
+            status.scrollIntoView({ behavior: 'smooth', block: 'center' });
           } else {
             status.textContent = 'เกิดข้อผิดพลาด กรุณาลองใหม่อีกครั้ง หรือติดต่อเราโดยตรงทาง LINE หรืออีเมลด้านล่าง';
             status.className = 'form-status error';
+            status.focus();
+            status.scrollIntoView({ behavior: 'smooth', block: 'center' });
           }
         })
         .catch(function () {
           status.textContent = 'เกิดข้อผิดพลาด กรุณาลองใหม่อีกครั้ง หรือติดต่อเราโดยตรงทาง LINE หรืออีเมลด้านล่าง';
           status.className = 'form-status error';
+          status.focus();
+          status.scrollIntoView({ behavior: 'smooth', block: 'center' });
         })
         .finally(function () {
           submitBtn.disabled = false;
