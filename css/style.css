@@ -345,14 +345,14 @@ img {
 }
 
 .hero .eyebrow {
-  color: var(--coral-300);
+  color: var(--coral-600);
 }
 
 .eyebrow {
   font-size: 11.5px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--coral-700);
+  color: var(--coral-600);
   font-weight: 600;
   margin-bottom: 16px;
 }
@@ -491,7 +491,7 @@ img {
 }
 
 .dark-section .eyebrow {
-  color: var(--teal-400);
+  color: var(--coral-600);
 }
 
 .dark-section h2 {
@@ -540,6 +540,7 @@ img {
 .step-title {
   font-size: 14.5px;
   font-weight: 500;
+  color: var(--coral-600);
   margin-bottom: 6px;
 }
 
@@ -559,7 +560,7 @@ img {
   font-size: 12px;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--ink-faint);
+  color: var(--coral-600);
   margin-bottom: 28px;
 }
 
@@ -591,8 +592,8 @@ img {
   margin-bottom: 16px;
 }
 
-.tier-card:not(.featured) .tier-eyebrow { color: var(--teal-700); }
-.tier-card.featured .tier-eyebrow { color: var(--coral-700); }
+.tier-card:not(.featured) .tier-eyebrow,
+.tier-card.featured .tier-eyebrow { color: var(--coral-600); }
 
 .tier-header {
   display: flex;
@@ -916,11 +917,12 @@ img {
   font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  color: var(--coral-600);
   margin-bottom: 8px;
 }
 
-.teal-text { color: var(--teal-700); }
-.coral-text { color: var(--coral-700); }
+.teal-text,
+.coral-text { color: var(--coral-600); }
 
 .service-title {
   font-family: var(--font-display);
@@ -929,6 +931,10 @@ img {
   color: var(--teal-950);
   margin-bottom: 14px;
   line-height: 1.3;
+}
+
+.howit-step .service-title {
+  color: var(--coral-600);
 }
 
 .service-desc {
