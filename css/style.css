@@ -1433,7 +1433,6 @@ img {
   display: flex;
   gap: 16px;
   justify-content: flex-end;
-  margin-bottom: 10px;
   font-size: 12px;
 }
 
