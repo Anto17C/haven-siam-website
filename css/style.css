@@ -1224,3 +1224,107 @@ img {
     grid-template-columns: 1fr;
   }
 }
+
+/* ---------- SEO landing pages ---------- */
+.faq-list {
+  margin-top: 24px;
+  text-align: left;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 0.5px solid var(--border-light);
+}
+
+.faq-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.faq-q {
+  font-size: 14.5px;
+  font-weight: 600;
+  color: var(--teal-950);
+  margin-bottom: 6px;
+}
+
+.faq-a {
+  font-size: 14px;
+  color: var(--ink-muted);
+  line-height: 1.6;
+}
+
+.checklist-section {
+  background: var(--white);
+  padding: 4.5rem 2rem;
+}
+
+.checklist-inner {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.checklist-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 22px;
+  border-radius: 12px;
+  background: var(--cream);
+}
+
+.checklist-status {
+  flex-shrink: 0;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding: 6px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+  margin-top: 3px;
+}
+
+.checklist-status.in-scope {
+  background: var(--teal-100);
+  color: var(--teal-700);
+}
+
+.checklist-status.direct {
+  background: var(--coral-100);
+  color: var(--coral-700);
+}
+
+.checklist-status.out-of-scope {
+  background: var(--border-light);
+  color: var(--ink-faint);
+}
+
+.checklist-content h3 {
+  font-family: var(--font-display);
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--teal-950);
+  margin-bottom: 4px;
+}
+
+.checklist-content p {
+  font-size: 13.5px;
+  color: var(--ink-muted);
+  line-height: 1.55;
+}
+
+@media (max-width: 640px) {
+  .checklist-item {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
