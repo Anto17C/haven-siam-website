@@ -41,6 +41,23 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+body.lang-th {
+  font-family: 'Noto Sans Thai', var(--font-body);
+}
+
+body.lang-th h1,
+body.lang-th h2,
+body.lang-th .logo,
+body.lang-th .tier-title,
+body.lang-th .service-title,
+body.lang-th .service-card-title,
+body.lang-th .pillar-heading,
+body.lang-th .checklist-content h3,
+body.lang-th .step-number,
+body.lang-th .cta-band h2 {
+  font-family: 'Noto Sans Thai', var(--font-body);
+}
+
 a {
   color: inherit;
   text-decoration: none;
@@ -1328,4 +1345,106 @@ img {
     flex-direction: column;
     gap: 10px;
   }
+}
+
+/* ---------- Legal pages ---------- */
+.legal-header {
+  background: var(--cream);
+  padding: 4rem 2rem 3rem;
+  text-align: center;
+}
+
+.legal-header .eyebrow {
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.legal-header h1 {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--teal-950);
+  margin-bottom: 10px;
+}
+
+.legal-header .legal-updated {
+  font-size: 13px;
+  color: var(--ink-faint);
+}
+
+.legal-content {
+  background: var(--white);
+  padding: 3.5rem 2rem 4.5rem;
+}
+
+.legal-content-inner {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.legal-content h2 {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--teal-950);
+  margin: 40px 0 12px;
+}
+
+.legal-content h2:first-child {
+  margin-top: 0;
+}
+
+.legal-content p {
+  font-size: 14.5px;
+  color: var(--ink-muted);
+  line-height: 1.75;
+  margin-bottom: 14px;
+}
+
+.legal-content ul {
+  margin: 0 0 14px;
+  padding-left: 22px;
+}
+
+.legal-content li {
+  font-size: 14.5px;
+  color: var(--ink-muted);
+  line-height: 1.7;
+  margin-bottom: 8px;
+}
+
+.legal-content a {
+  color: var(--teal-700);
+  text-decoration: underline;
+}
+
+.legal-note {
+  background: var(--cream);
+  border-radius: 10px;
+  padding: 16px 20px;
+  font-size: 13.5px;
+  color: var(--ink-muted);
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+/* ---------- Footer legal links ---------- */
+.footer-legal-links {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.footer-legal-links a {
+  color: var(--teal-100);
+}
+
+.footer-legal-links a:hover {
+  color: var(--coral-600);
+}
+
+@media (max-width: 860px) {
+  .footer-legal-links { justify-content: center; }
 }
