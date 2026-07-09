@@ -186,7 +186,8 @@ img {
   color: var(--coral-600);
 }
 
-.sticky-whatsapp {
+.sticky-whatsapp,
+.sticky-line {
   position: fixed;
   bottom: 92px;
   right: 24px;
@@ -202,13 +203,21 @@ img {
   z-index: 40;
 }
 
-.sticky-whatsapp:hover {
+.sticky-line {
+  background: #06C755;
+}
+
+.sticky-whatsapp:hover,
+.sticky-line:hover {
   opacity: 0.9;
 }
 
-.sticky-whatsapp svg {
+.sticky-whatsapp svg,
+.sticky-line img {
   width: 28px;
   height: 28px;
+  object-fit: contain;
+  display: block;
 }
 
 .scroll-top-btn {
@@ -790,8 +799,12 @@ img {
     display: none;
     position: absolute;
     top: 100%;
-    left: 0;
-    right: 0;
+    left: 50%;
+    right: auto;
+    width: 100vw;
+    box-sizing: border-box;
+    margin-right: 0;
+    transform: translateX(-50%);
     flex-direction: column;
     gap: 4px;
     background: var(--white);

@@ -40,4 +40,52 @@
     <loc>https://havensiam.com/terms.html</loc>
     <priority>0.3</priority>
   </url>
+  <url>
+    <loc>https://havensiam.com/disclaimer.html</loc>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://havensiam.com/th/</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://havensiam.com/th/how-it-works.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://havensiam.com/th/services.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://havensiam.com/th/pricing.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://havensiam.com/th/about.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://havensiam.com/th/contact.html</loc>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://havensiam.com/th/register-company-thailand.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://havensiam.com/th/relocate-to-thailand.html</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://havensiam.com/th/privacy.html</loc>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://havensiam.com/th/terms.html</loc>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://havensiam.com/th/disclaimer.html</loc>
+    <priority>0.3</priority>
+  </url>
 </urlset>
