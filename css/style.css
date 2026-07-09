@@ -721,8 +721,9 @@ img {
 }
 
 .icon-link img {
+  width: 24px;
   height: 24px;
-  width: auto;
+  object-fit: contain;
   display: block;
 }
 
@@ -1213,7 +1214,9 @@ img {
 }
 
 .contact-icons-large .icon-link img {
+  width: 32px;
   height: 32px;
+  object-fit: contain;
 }
 
 @media (max-width: 640px) {
