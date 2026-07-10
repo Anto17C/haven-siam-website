@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="980" height="260" viewBox="0 0 980 260" role="img" aria-label="Haven Siam logo">
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="216" viewBox="0 22 980 216" role="img" aria-label="Haven Siam logo">
   <title>Haven Siam</title>
   <defs>
     <linearGradient id="markGrad" x1="44" y1="30" x2="202" y2="218" gradientUnits="userSpaceOnUse">
@@ -10,7 +10,7 @@
       <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#063F3B" flood-opacity="0.14"/>
     </filter>
   </defs>
-  <rect width="980" height="260" fill="none"/>
+  <rect y="22" width="980" height="216" fill="none"/>
   <g transform="translate(42 34)"><g>
     <rect x="0" y="0" width="192" height="192" rx="52" fill="url(#markGrad)"/>
     <path d="M54 54v84" fill="none" stroke="#FBF7EF" stroke-width="14" stroke-linecap="round"/>
