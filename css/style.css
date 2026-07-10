@@ -90,19 +90,12 @@ img {
 }
 
 .logo {
-  display: inline-flex;
-  align-items: center;
+  font-family: var(--font-display);
+  font-size: 21px;
+  font-weight: 600;
+  color: var(--teal-950);
+  white-space: nowrap;
   flex-shrink: 0;
-}
-
-.logo img {
-  display: block;
-  width: auto;
-  height: 42px;
-}
-
-.logo-mark-img {
-  display: none;
 }
 
 .nav-links {
@@ -719,15 +712,8 @@ img {
 }
 
 .footer-brand .logo {
+  color: var(--cream);
   margin-bottom: 12px;
-}
-
-.footer-brand .logo img {
-  height: 48px;
-}
-
-.footer-brand .logo-mark-img {
-  display: none;
 }
 
 .footer-brand p {
@@ -882,13 +868,6 @@ img {
   .logo {
     order: 1;
     margin-right: auto;
-  }
-  .navbar .logo-full-img {
-    display: none;
-  }
-  .navbar .logo-mark-img {
-    display: block;
-    height: 42px;
   }
   .nav-group {
     order: 3;
