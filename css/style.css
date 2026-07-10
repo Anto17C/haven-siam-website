@@ -852,6 +852,7 @@ img {
   .nav-toggle {
     order: 4;
     display: inline-flex;
+    padding: 8px 0;
   }
 }
 
@@ -878,6 +879,27 @@ img {
 .services-grid-section {
   background: var(--white);
   padding: 4.5rem 2rem;
+}
+
+.services-section-intro {
+  max-width: 680px;
+  margin: 0 auto 2.75rem;
+  text-align: center;
+}
+
+.services-section-intro h2 {
+  font-family: var(--font-display);
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--teal-950);
+  line-height: 1.25;
+  margin-bottom: 14px;
+}
+
+.services-section-intro p:not(.eyebrow) {
+  font-size: 15px;
+  color: var(--ink-muted);
+  line-height: 1.65;
 }
 
 .services-grid {
