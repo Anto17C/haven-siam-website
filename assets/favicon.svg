@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-label="Haven Siam favicon">
-  <rect x="4" y="4" width="56" height="56" rx="14" fill="#063F3B"/>
-  <path d="M18 39c7-12 20-17 28-28" fill="none" stroke="#E8784F" stroke-width="5" stroke-linecap="round"/>
-  <path d="M19 25h12c6 0 10 4 10 10v12" fill="none" stroke="#FBF7EF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M19 45h26" fill="none" stroke="#FBF7EF" stroke-width="5" stroke-linecap="round"/>
-  <circle cx="19" cy="25" r="4" fill="#FBF7EF"/>
-  <circle cx="45" cy="45" r="4" fill="#E8784F"/>
-</svg>
