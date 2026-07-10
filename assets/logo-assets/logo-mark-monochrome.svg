@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="192" height="192" viewBox="0 0 192 192" role="img" aria-label="Haven Siam mark">
+  <title>Haven Siam mark</title>
+  <defs>
+    <linearGradient id="markGrad" x1="44" y1="30" x2="202" y2="218" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0F655D"/>
+      <stop offset="1" stop-color="#073A37"/>
+    </linearGradient>
+    <filter id="softShadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#063F3B" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+  <g>
+    <rect x="0" y="0" width="192" height="192" rx="52" fill="#063F3B"/>
+    <path d="M54 54v84" fill="none" stroke="#FFFFFF" stroke-width="14" stroke-linecap="round"/>
+    <path d="M138 54v84" fill="none" stroke="#FFFFFF" stroke-width="14" stroke-linecap="round"/>
+    <path d="M58 96h76" fill="none" stroke="#FFFFFF" stroke-width="14" stroke-linecap="round"/>
+    <path d="M52 139c28 22 79 20 104-7 18-20 6-43-24-45-30-2-58 10-76 28" fill="none" stroke="#FFFFFF" stroke-width="10" stroke-linecap="round"/>
+    <path d="M35 78c35-36 89-44 124-20" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" opacity="0.92"/>
+    <path d="M44 157c39 20 86 14 117-15" fill="none" stroke="#FFFFFF" stroke-width="7" stroke-linecap="round" opacity="0.92"/>
+    <circle cx="35" cy="78" r="7" fill="#FFFFFF"/>
+    <circle cx="158" cy="58" r="7" fill="#FFFFFF"/>
+    <circle cx="161" cy="142" r="7" fill="#FFFFFF"/>
+  </g>
+</svg>

@@ -96,6 +96,17 @@ img {
   color: var(--teal-950);
   white-space: nowrap;
   flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 128px;
+  height: auto;
+}
+
+.logo-link {
+  line-height: 0;
 }
 
 .nav-links {
@@ -782,6 +793,10 @@ img {
 .footer-brand .logo {
   color: var(--cream);
   margin-bottom: 12px;
+}
+
+.footer-brand .footer-logo img {
+  width: 150px;
 }
 
 .footer-brand p {
