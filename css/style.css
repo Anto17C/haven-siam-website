@@ -914,7 +914,7 @@ img {
   .footer-disclaimer { text-align: center; max-width: 100%; }
   .navbar {
     padding-left: 2rem;
-    padding-right: 2rem;
+    padding-right: 3rem;
   }
   .hero { height: auto; }
   .page-hero { height: auto; }
@@ -1009,11 +1009,15 @@ img {
   .nav-toggle {
     order: 4;
     display: inline-flex;
-    padding: 8px 10px 8px 0;
+    padding: 8px 0;
   }
 }
 
 @media (max-width: 640px) {
+  .navbar {
+    padding-left: 2rem;
+    padding-right: 3rem;
+  }
   .hero-copy h1 { font-size: 28px; }
   .pillar-row { gap: 16px; }
   .pillar { width: 45%; }
