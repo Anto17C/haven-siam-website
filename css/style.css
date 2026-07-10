@@ -750,9 +750,24 @@ img {
 }
 
 .footer-contact-details a {
+  display: flex;
+  align-items: center;
+  gap: 7px;
   font-size: 13px;
   margin-bottom: 7px;
   color: var(--teal-100);
+}
+
+.footer-contact-details img,
+.footer-contact-details svg {
+  width: 12px;
+  height: 12px;
+  flex: 0 0 12px;
+  object-fit: contain;
+}
+
+.footer-contact-details svg {
+  stroke: currentColor;
 }
 
 .contact-icons {
