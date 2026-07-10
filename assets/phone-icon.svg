@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="Phone icon">
+  <title>Phone icon</title>
+  <rect x="10" y="10" width="108" height="108" rx="24" fill="#FBF7EF"/>
+  <rect x="10" y="10" width="108" height="108" rx="24" fill="none" stroke="#D8C7AA" stroke-width="2"/>
+  
+    <path d="M47 31h34c5 0 9 4 9 9v48c0 5-4 9-9 9H47c-5 0-9-4-9-9V40c0-5 4-9 9-9Z" fill="none" stroke="#063F3B" stroke-width="6"/>
+    <path d="M56 42h16M58 86h12" stroke="#E8784F" stroke-width="6" stroke-linecap="round"/>
+  
+</svg>
