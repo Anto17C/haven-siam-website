@@ -101,7 +101,7 @@ img {
 }
 
 .logo img {
-  width: 220px;
+  width: 250px;
   height: auto;
 }
 
@@ -796,7 +796,7 @@ img {
 }
 
 .footer-brand .footer-logo img {
-  width: 270px;
+  width: 300px;
 }
 
 .footer-brand p {
@@ -984,7 +984,7 @@ img {
     margin-right: auto;
   }
   .logo img {
-    width: 172px;
+    width: 200px;
   }
   .nav-group {
     order: 3;
