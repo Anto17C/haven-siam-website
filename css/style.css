@@ -854,6 +854,20 @@ img {
   stroke: currentColor;
 }
 
+.legal-contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  vertical-align: middle;
+}
+
+.legal-contact-link img {
+  width: 14px;
+  height: 14px;
+  flex: 0 0 14px;
+  object-fit: contain;
+}
+
 .contact-icons {
   display: flex;
   gap: 10px;
