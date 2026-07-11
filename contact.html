@@ -350,10 +350,6 @@
         zohoForm.appendChild(input);
       });
 
-      document.body.appendChild(zohoForm);
-      zohoForm.submit();
-      zohoForm.remove();
-
       form.reset();
       status.textContent = "Thanks — that's sent. We'll be in touch within one business day.";
       status.className = 'form-status success';
@@ -361,6 +357,12 @@
       status.scrollIntoView({ behavior: 'smooth', block: 'center' });
       submitBtn.disabled = false;
       submitBtn.textContent = 'Send';
+
+      document.body.appendChild(zohoForm);
+      setTimeout(function () {
+        zohoForm.submit();
+        zohoForm.remove();
+      }, 0);
     });
   </script>
 </body>
