@@ -290,12 +290,25 @@
     var submitBtn = document.getElementById('submitBtn');
     var status = document.getElementById('formStatus');
 
+    function clearFormStatus() {
+      status.textContent = '';
+      status.className = 'form-status';
+      status.style.display = 'none';
+    }
+
+    function showFormStatus(type, message) {
+      status.textContent = message;
+      status.className = 'form-status ' + type;
+      status.style.display = 'block';
+      status.focus({ preventScroll: true });
+      status.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       submitBtn.disabled = true;
       submitBtn.textContent = 'กำลังส่ง...';
-      status.textContent = '';
-      status.className = 'form-status';
+      clearFormStatus();
 
       var formData = new FormData(form);
       var payload = Object.fromEntries(formData);
@@ -313,22 +326,13 @@
         .then(function (data) {
           if (data.success) {
             form.reset();
-            status.textContent = 'ขอบคุณครับ/ค่ะ ส่งเรียบร้อยแล้ว เราจะติดต่อกลับภายในหนึ่งวันทำการ';
-            status.className = 'form-status success';
-            status.focus();
-            status.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            showFormStatus('success', 'ขอบคุณครับ/ค่ะ ส่งเรียบร้อยแล้ว เราจะติดต่อกลับภายในหนึ่งวันทำการ');
           } else {
-            status.textContent = 'เกิดข้อผิดพลาด กรุณาลองใหม่อีกครั้ง หรือติดต่อเราโดยตรงทาง LINE หรืออีเมลด้านล่าง';
-            status.className = 'form-status error';
-            status.focus();
-            status.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            showFormStatus('error', 'เกิดข้อผิดพลาด กรุณาลองใหม่อีกครั้ง หรือติดต่อเราโดยตรงทาง LINE หรืออีเมลด้านล่าง');
           }
         })
         .catch(function () {
-          status.textContent = 'เกิดข้อผิดพลาด กรุณาลองใหม่อีกครั้ง หรือติดต่อเราโดยตรงทาง LINE หรืออีเมลด้านล่าง';
-          status.className = 'form-status error';
-          status.focus();
-          status.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          showFormStatus('error', 'เกิดข้อผิดพลาด กรุณาลองใหม่อีกครั้ง หรือติดต่อเราโดยตรงทาง LINE หรืออีเมลด้านล่าง');
         })
         .finally(function () {
           submitBtn.disabled = false;

@@ -293,12 +293,25 @@
     var submitBtn = document.getElementById('submitBtn');
     var status = document.getElementById('formStatus');
 
+    function clearFormStatus() {
+      status.textContent = '';
+      status.className = 'form-status';
+      status.style.display = 'none';
+    }
+
+    function showFormStatus(type, message) {
+      status.textContent = message;
+      status.className = 'form-status ' + type;
+      status.style.display = 'block';
+      status.focus({ preventScroll: true });
+      status.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       submitBtn.disabled = true;
       submitBtn.textContent = 'Sending...';
-      status.textContent = '';
-      status.className = 'form-status';
+      clearFormStatus();
 
       var formData = new FormData(form);
       var payload = Object.fromEntries(formData);
@@ -317,22 +330,13 @@
         .then(function (data) {
           if (data.success) {
             form.reset();
-            status.textContent = 'Thanks — that\'s sent. We\'ll be in touch within one business day.';
-            status.className = 'form-status success';
-            status.focus();
-            status.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            showFormStatus('success', 'Thanks — that\'s sent. We\'ll be in touch within one business day.');
           } else {
-            status.textContent = 'Something went wrong. Please try again, or reach us directly via WhatsApp or email below.';
-            status.className = 'form-status error';
-            status.focus();
-            status.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            showFormStatus('error', 'Something went wrong. Please try again, or reach us directly via WhatsApp or email below.');
           }
         })
         .catch(function () {
-          status.textContent = 'Something went wrong. Please try again, or reach us directly via WhatsApp or email below.';
-          status.className = 'form-status error';
-          status.focus();
-          status.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          showFormStatus('error', 'Something went wrong. Please try again, or reach us directly via WhatsApp or email below.');
         })
         .finally(function () {
           submitBtn.disabled = false;
