@@ -347,10 +347,6 @@
         zohoForm.appendChild(input);
       });
 
-      document.body.appendChild(zohoForm);
-      zohoForm.submit();
-      zohoForm.remove();
-
       form.reset();
       status.textContent = 'ขอบคุณครับ/ค่ะ ส่งเรียบร้อยแล้ว เราจะติดต่อกลับภายในหนึ่งวันทำการ';
       status.className = 'form-status success';
@@ -358,6 +354,12 @@
       status.scrollIntoView({ behavior: 'smooth', block: 'center' });
       submitBtn.disabled = false;
       submitBtn.textContent = 'ส่งข้อความ';
+
+      document.body.appendChild(zohoForm);
+      setTimeout(function () {
+        zohoForm.submit();
+        zohoForm.remove();
+      }, 0);
     });
   </script>
 </body>
