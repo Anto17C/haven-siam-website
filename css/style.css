@@ -113,7 +113,7 @@ img {
 .nav-links {
   display: flex;
   gap: 26px;
-  font-size: 13.5px;
+  font-size: 15px;
   color: var(--ink-muted);
   white-space: nowrap;
   margin-right: 66px;
@@ -208,6 +208,7 @@ img {
   white-space: nowrap;
   margin-right: 28px;
   order: 3;
+  font-size: 15px;
 }
 
 .nav-socials {
@@ -247,7 +248,7 @@ img {
   display: flex;
   align-items: center;
   gap: 6px;
-  font-size: 13px;
+  font-size: 15px;
   white-space: nowrap;
   margin-right: 28px;
   order: 2;
@@ -999,13 +1000,16 @@ img {
   }
   .lang-switch { display: none; }
   .nav-socials { display: none; }
-  .navbar-inner { gap: 10px; }
+  .navbar-inner {
+    gap: 10px;
+    justify-content: space-between;
+  }
   .logo {
     order: 1;
-    margin-right: auto;
+    margin-right: 0;
   }
   .logo img {
-    width: 200px;
+    width: clamp(148px, 40vw, 180px);
   }
   .nav-group {
     order: 3;
@@ -1013,6 +1017,7 @@ img {
   }
   .nav-cta {
     margin-right: 0;
+    padding: 10px 20px;
   }
   .lang-link-mobile {
     order: 2;
@@ -1027,6 +1032,7 @@ img {
     order: 4;
     display: inline-flex;
     padding: 8px 0;
+    margin-right: 0;
   }
 }
 
@@ -1065,9 +1071,9 @@ img {
     border-top: none;
     box-shadow: none;
     padding: 0;
-    gap: 2px;
-    margin-right: 10px;
-    font-size: clamp(10px, 1.25vw, 12px);
+    gap: 4px;
+    margin-right: 14px;
+    font-size: clamp(12px, 1.55vw, 14px);
     order: 1;
   }
   .nav-links a {
@@ -1096,24 +1102,24 @@ img {
   }
   .lang-switch {
     display: flex;
-    font-size: clamp(10px, 1.25vw, 12px);
-    margin-right: 10px;
+    font-size: clamp(12px, 1.55vw, 14px);
+    margin-right: 14px;
     order: 2;
   }
   .nav-cta {
-    margin-right: 10px;
-    padding: 7px 12px;
-    font-size: clamp(10px, 1.25vw, 12px);
+    margin-right: 14px;
+    padding: 9px 14px;
+    font-size: clamp(12px, 1.55vw, 14px);
     order: 3;
   }
   .nav-socials {
     display: flex;
-    gap: 8px;
+    gap: 10px;
     order: 4;
   }
   .nav-socials .icon-link img {
-    width: 14px;
-    height: 14px;
+    width: 16px;
+    height: 16px;
   }
 }
 
