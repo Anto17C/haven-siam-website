@@ -941,7 +941,10 @@ img {
   .dark-section-inner { flex-direction: column; }
   .steps-grid { grid-template-columns: 1fr; max-width: 100%; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
+}
 
+/* ---------- Narrow phone portrait: hamburger nav ---------- */
+@media (max-width: 600px) {
   .nav-links {
     display: none;
     position: absolute;
@@ -1024,6 +1027,92 @@ img {
     order: 4;
     display: inline-flex;
     padding: 8px 0;
+  }
+}
+
+/* ---------- Landscape phones / narrow tablets: compact expanded nav ---------- */
+@media (min-width: 601px) and (max-width: 960px) {
+  .navbar {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .navbar-inner {
+    flex-wrap: nowrap;
+    gap: 6px;
+  }
+  .logo img {
+    width: 110px;
+  }
+  .nav-toggle,
+  .lang-link-mobile {
+    display: none;
+  }
+  .nav-group {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    flex-wrap: nowrap;
+    min-width: 0;
+  }
+  .nav-links {
+    display: flex;
+    position: static;
+    flex-direction: row;
+    width: auto;
+    transform: none;
+    background: transparent;
+    border-top: none;
+    box-shadow: none;
+    padding: 0;
+    gap: 8px;
+    margin-right: 8px;
+    font-size: 10.5px;
+    order: 1;
+  }
+  .nav-links a {
+    padding: 0;
+  }
+  .nav-item {
+    display: flex;
+    align-items: center;
+  }
+  .nav-dropdown-menu {
+    position: absolute;
+    min-width: 170px;
+    padding: 8px 0;
+    background: var(--white);
+    box-shadow: 0 12px 24px rgba(4, 52, 44, 0.08);
+  }
+  .nav-dropdown:hover .nav-dropdown-menu,
+  .nav-dropdown:focus-within .nav-dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  .nav-dropdown-menu a {
+    padding: 7px 14px;
+    font-size: 12px;
+  }
+  .lang-switch {
+    display: flex;
+    font-size: 10px;
+    margin-right: 8px;
+    order: 2;
+  }
+  .nav-cta {
+    margin-right: 8px;
+    padding: 6px 10px;
+    font-size: 10.5px;
+    order: 3;
+  }
+  .nav-socials {
+    display: flex;
+    gap: 5px;
+    order: 4;
+  }
+  .nav-socials .icon-link img {
+    width: 14px;
+    height: 14px;
   }
 }
 
