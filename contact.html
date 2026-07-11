@@ -99,7 +99,10 @@
       <form id="inquiryForm" class="inquiry-form" action="https://api.web3forms.com/submit" method="POST">
         <input type="hidden" name="access_key" value="f5efa26a-0f75-4a95-bc88-8da7dddb3e95">
         <input type="hidden" name="subject" value="New inquiry from the Haven Siam website">
+        <input type="hidden" name="from_name" value="Haven Siam Website">
         <input type="checkbox" name="botcheck" class="botcheck-field" tabindex="-1" autocomplete="off">
+        <div id="formSuccess" class="form-success" role="status" aria-live="polite">Thank you — your inquiry has been sent. We’ll review the details and get back to you within one business day.</div>
+        <div id="formError" class="form-error" role="alert" aria-live="assertive"></div>
 
         <div class="form-row">
           <div class="form-field">
@@ -174,8 +177,6 @@
         </div>
 
         <button type="submit" class="btn btn-coral form-submit" id="submitBtn">Send</button>
-
-        <p class="form-status" id="formStatus" role="status" aria-live="polite" tabindex="-1"></p>
       </form>
 
       <div class="contact-alt">
@@ -291,56 +292,74 @@
 
     var form = document.getElementById('inquiryForm');
     var submitBtn = document.getElementById('submitBtn');
-    var status = document.getElementById('formStatus');
+    var success = document.getElementById('formSuccess');
+    var errorBox = document.getElementById('formError');
+    var defaultButtonText = 'Send';
 
-    function clearFormStatus() {
-      status.textContent = '';
-      status.className = 'form-status';
-      status.style.display = 'none';
+    function hideFormMessages() {
+      if (success) success.style.display = 'none';
+      if (errorBox) {
+        errorBox.textContent = '';
+        errorBox.style.display = 'none';
+      }
     }
 
-    function showFormStatus(type, message) {
-      status.textContent = message;
-      status.className = 'form-status ' + type;
-      status.style.display = 'block';
-      status.focus({ preventScroll: true });
-      status.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    function showFormError(message) {
+      if (success) success.style.display = 'none';
+      if (errorBox) {
+        errorBox.textContent = message;
+        errorBox.style.display = 'block';
+        errorBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
     }
 
     form.addEventListener('submit', function (e) {
       e.preventDefault();
+      if (!form.reportValidity()) return;
+
+      hideFormMessages();
       submitBtn.disabled = true;
       submitBtn.textContent = 'Sending...';
-      clearFormStatus();
 
       var formData = new FormData(form);
-      var payload = Object.fromEntries(formData);
-      // Combine multi-checked "Services" checkboxes into one readable field
       var services = formData.getAll('Services');
       if (services.length) {
-        payload['Services'] = services.join(', ');
+        formData.delete('Services');
+        formData.append('Services', services.join(', '));
       }
 
-      fetch('https://api.web3forms.com/submit', {
+      fetch(form.action, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify(payload)
+        body: formData,
+        headers: { Accept: 'application/json' }
       })
-        .then(function (res) { return res.json(); })
-        .then(function (data) {
-          if (data.success) {
+        .then(function (res) {
+          return res.json().catch(function () { return {}; }).then(function (data) {
+            return { ok: res.ok, data: data };
+          });
+        })
+        .then(function (result) {
+          if (result.ok && result.data.success) {
             form.reset();
-            showFormStatus('success', 'Thanks — that\'s sent. We\'ll be in touch within one business day.');
+            if (success) {
+              success.style.display = 'block';
+              success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+            submitBtn.textContent = 'Message sent';
           } else {
-            showFormStatus('error', 'Something went wrong. Please try again, or reach us directly via WhatsApp or email below.');
+            showFormError(result.data.message || 'We could not send your inquiry. Please try again, or reach us directly via WhatsApp or email below.');
+            submitBtn.textContent = defaultButtonText;
           }
         })
         .catch(function () {
-          showFormStatus('error', 'Something went wrong. Please try again, or reach us directly via WhatsApp or email below.');
+          showFormError('We could not connect to the form service. Please try again, or reach us directly via WhatsApp or email below.');
+          submitBtn.textContent = defaultButtonText;
         })
         .finally(function () {
-          submitBtn.disabled = false;
-          submitBtn.textContent = 'Send';
+          setTimeout(function () {
+            submitBtn.disabled = false;
+            if (submitBtn.textContent === 'Message sent') submitBtn.textContent = defaultButtonText;
+          }, 1800);
         });
     });
   </script>

@@ -928,7 +928,7 @@ img {
   .footer-disclaimer { text-align: center; max-width: 100%; }
   .navbar {
     padding-left: 2rem;
-    padding-right: 3rem;
+    padding-right: 2rem;
   }
   .hero { height: auto; }
   .page-hero { height: auto; }
@@ -1033,15 +1033,16 @@ img {
 /* ---------- Landscape phones / narrow tablets: compact expanded nav ---------- */
 @media (min-width: 601px) and (max-width: 960px) {
   .navbar {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
   .navbar-inner {
     flex-wrap: nowrap;
-    gap: 6px;
+    gap: 8px;
+    min-height: 72px;
   }
   .logo img {
-    width: 110px;
+    width: clamp(128px, 17vw, 170px);
   }
   .nav-toggle,
   .lang-link-mobile {
@@ -1064,13 +1065,13 @@ img {
     border-top: none;
     box-shadow: none;
     padding: 0;
-    gap: 8px;
-    margin-right: 8px;
-    font-size: 10.5px;
+    gap: 2px;
+    margin-right: 10px;
+    font-size: clamp(10px, 1.25vw, 12px);
     order: 1;
   }
   .nav-links a {
-    padding: 0;
+    padding: 7px 5px;
   }
   .nav-item {
     display: flex;
@@ -1095,19 +1096,19 @@ img {
   }
   .lang-switch {
     display: flex;
-    font-size: 10px;
-    margin-right: 8px;
+    font-size: clamp(10px, 1.25vw, 12px);
+    margin-right: 10px;
     order: 2;
   }
   .nav-cta {
-    margin-right: 8px;
-    padding: 6px 10px;
-    font-size: 10.5px;
+    margin-right: 10px;
+    padding: 7px 12px;
+    font-size: clamp(10px, 1.25vw, 12px);
     order: 3;
   }
   .nav-socials {
     display: flex;
-    gap: 5px;
+    gap: 8px;
     order: 4;
   }
   .nav-socials .icon-link img {
@@ -1119,7 +1120,7 @@ img {
 @media (max-width: 640px) {
   .navbar {
     padding-left: 2rem;
-    padding-right: 3rem;
+    padding-right: 2rem;
   }
   .hero-copy h1 { font-size: 28px; }
   .pillar-row { gap: 16px; }
@@ -1560,29 +1561,24 @@ img {
   cursor: not-allowed;
 }
 
-.form-status {
+.form-success,
+.form-error {
   display: none;
   font-size: 14px;
   line-height: 1.55;
-  margin-top: 16px;
-  padding: 13px 16px;
+  margin-bottom: 18px;
+  padding: 14px 16px;
   border-radius: 8px;
   text-align: center;
-  outline: none;
 }
 
-.form-status.success,
-.form-status.error {
-  display: block;
-}
-
-.form-status.success {
+.form-success {
   color: var(--teal-950);
   background: var(--teal-100);
   border: 1px solid rgba(15, 110, 86, 0.28);
 }
 
-.form-status.error {
+.form-error {
   color: var(--coral-700);
   background: var(--coral-100);
   border: 1px solid rgba(216, 90, 48, 0.28);

@@ -99,7 +99,10 @@
       <form id="inquiryForm" class="inquiry-form" action="https://api.web3forms.com/submit" method="POST">
         <input type="hidden" name="access_key" value="f5efa26a-0f75-4a95-bc88-8da7dddb3e95">
         <input type="hidden" name="subject" value="New inquiry from the Haven Siam website (Thai)">
+        <input type="hidden" name="from_name" value="Haven Siam Website">
         <input type="checkbox" name="botcheck" class="botcheck-field" tabindex="-1" autocomplete="off">
+        <div id="formSuccess" class="form-success" role="status" aria-live="polite">ขอบคุณครับ/ค่ะ ส่งข้อความเรียบร้อยแล้ว เราจะตรวจสอบรายละเอียดและติดต่อกลับภายในหนึ่งวันทำการ</div>
+        <div id="formError" class="form-error" role="alert" aria-live="assertive"></div>
 
         <div class="form-row">
           <div class="form-field">
@@ -173,8 +176,6 @@
         </div>
 
         <button type="submit" class="btn btn-coral form-submit" id="submitBtn">ส่งข้อความ</button>
-
-        <p class="form-status" id="formStatus" role="status" aria-live="polite" tabindex="-1"></p>
       </form>
 
       <div class="contact-alt">
@@ -288,55 +289,74 @@
 
     var form = document.getElementById('inquiryForm');
     var submitBtn = document.getElementById('submitBtn');
-    var status = document.getElementById('formStatus');
+    var success = document.getElementById('formSuccess');
+    var errorBox = document.getElementById('formError');
+    var defaultButtonText = 'ส่งข้อความ';
 
-    function clearFormStatus() {
-      status.textContent = '';
-      status.className = 'form-status';
-      status.style.display = 'none';
+    function hideFormMessages() {
+      if (success) success.style.display = 'none';
+      if (errorBox) {
+        errorBox.textContent = '';
+        errorBox.style.display = 'none';
+      }
     }
 
-    function showFormStatus(type, message) {
-      status.textContent = message;
-      status.className = 'form-status ' + type;
-      status.style.display = 'block';
-      status.focus({ preventScroll: true });
-      status.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    function showFormError(message) {
+      if (success) success.style.display = 'none';
+      if (errorBox) {
+        errorBox.textContent = message;
+        errorBox.style.display = 'block';
+        errorBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
     }
 
     form.addEventListener('submit', function (e) {
       e.preventDefault();
+      if (!form.reportValidity()) return;
+
+      hideFormMessages();
       submitBtn.disabled = true;
       submitBtn.textContent = 'กำลังส่ง...';
-      clearFormStatus();
 
       var formData = new FormData(form);
-      var payload = Object.fromEntries(formData);
       var services = formData.getAll('Services');
       if (services.length) {
-        payload['Services'] = services.join(', ');
+        formData.delete('Services');
+        formData.append('Services', services.join(', '));
       }
 
-      fetch('https://api.web3forms.com/submit', {
+      fetch(form.action, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify(payload)
+        body: formData,
+        headers: { Accept: 'application/json' }
       })
-        .then(function (res) { return res.json(); })
-        .then(function (data) {
-          if (data.success) {
+        .then(function (res) {
+          return res.json().catch(function () { return {}; }).then(function (data) {
+            return { ok: res.ok, data: data };
+          });
+        })
+        .then(function (result) {
+          if (result.ok && result.data.success) {
             form.reset();
-            showFormStatus('success', 'ขอบคุณครับ/ค่ะ ส่งเรียบร้อยแล้ว เราจะติดต่อกลับภายในหนึ่งวันทำการ');
+            if (success) {
+              success.style.display = 'block';
+              success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+            submitBtn.textContent = 'ส่งเรียบร้อย';
           } else {
-            showFormStatus('error', 'เกิดข้อผิดพลาด กรุณาลองใหม่อีกครั้ง หรือติดต่อเราโดยตรงทาง LINE หรืออีเมลด้านล่าง');
+            showFormError(result.data.message || 'ส่งข้อความไม่สำเร็จ กรุณาลองใหม่อีกครั้ง หรือติดต่อเราโดยตรงทาง LINE หรืออีเมลด้านล่าง');
+            submitBtn.textContent = defaultButtonText;
           }
         })
         .catch(function () {
-          showFormStatus('error', 'เกิดข้อผิดพลาด กรุณาลองใหม่อีกครั้ง หรือติดต่อเราโดยตรงทาง LINE หรืออีเมลด้านล่าง');
+          showFormError('ไม่สามารถเชื่อมต่อบริการแบบฟอร์มได้ กรุณาลองใหม่อีกครั้ง หรือติดต่อเราโดยตรงทาง LINE หรืออีเมลด้านล่าง');
+          submitBtn.textContent = defaultButtonText;
         })
         .finally(function () {
-          submitBtn.disabled = false;
-          submitBtn.textContent = 'ส่งข้อความ';
+          setTimeout(function () {
+            submitBtn.disabled = false;
+            if (submitBtn.textContent === 'ส่งเรียบร้อย') submitBtn.textContent = defaultButtonText;
+          }, 1800);
         });
     });
   </script>
