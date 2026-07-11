@@ -96,10 +96,13 @@
         <p>บอกเราว่าคุณมีอะไรแล้ว ต้องการอะไร และอยากเริ่มเมื่อไหร่ เราจะช่วยแนะนำระดับบริการหรือชุดบริการที่เหมาะกับคุณ</p>
       </div>
 
-      <form id="inquiryForm" class="inquiry-form" action="https://api.web3forms.com/submit" method="POST">
-        <input type="hidden" name="access_key" value="f5efa26a-0f75-4a95-bc88-8da7dddb3e95">
-        <input type="hidden" name="subject" value="New inquiry from the Haven Siam website (Thai)">
-        <input type="checkbox" name="botcheck" class="botcheck-field" tabindex="-1" autocomplete="off">
+      <form id="inquiryForm" class="inquiry-form" action="https://crm.zoho.com/crm/WebToLeadForm" method="POST">
+        <input type="hidden" name="xnQsjsdp" value="1dcbd10d35638e7c7e4da4011c1cff5645d1e3e63c47296e5f1b3005b0796711">
+        <input type="hidden" name="zc_gad" id="zc_gad" value="">
+        <input type="hidden" name="xmIwtLD" value="69e05df0f166de7ab62d6435ff448ad26db7c6fc0985108d5d4c137e90321c5ab14bcc26feafaf20e9d197ae32713527">
+        <input type="hidden" name="actionType" value="TGVhZHM=">
+        <input type="hidden" name="returnURL" value="null">
+        <input type="text" name="aG9uZXlwb3Q" class="botcheck-field" tabindex="-1" autocomplete="off">
 
         <div class="form-row">
           <div class="form-field">
@@ -132,15 +135,15 @@
           <p class="form-hint">ยังไม่แน่ใจ? เว้นว่างไว้แล้วบอกเราในข้อความด้านล่าง</p>
           <div class="radio-grid">
             <label class="radio-option">
-              <input type="radio" name="Tier interest" value="Tier 1 — Digital foundation">
+              <input type="radio" name="Tier interest" value="Tier 1 - Digital foundation">
               <span>ระดับ 1 — รากฐานดิจิทัล</span>
             </label>
             <label class="radio-option">
-              <input type="radio" name="Tier interest" value="Tier 2 — Business launch">
+              <input type="radio" name="Tier interest" value="Tier 2 - Business launch">
               <span>ระดับ 2 — เปิดตัวธุรกิจ</span>
             </label>
             <label class="radio-option">
-              <input type="radio" name="Tier interest" value="Tier 3 — Full concierge">
+              <input type="radio" name="Tier interest" value="Tier 3 - Full concierge">
               <span>ระดับ 3 — บริการครบวงจร</span>
             </label>
             <label class="radio-option">
@@ -155,7 +158,7 @@
           <div class="checkbox-grid">
             <label class="checkbox-option"><input type="checkbox" name="Services" value="Website design"><span>ออกแบบเว็บไซต์</span></label>
             <label class="checkbox-option"><input type="checkbox" name="Services" value="Domain registration"><span>จดทะเบียนโดเมน</span></label>
-            <label class="checkbox-option"><input type="checkbox" name="Services" value="Hosting"><span>โฮสติ้ง</span></label>
+            <label class="checkbox-option"><input type="checkbox" name="Services" value="Web hosting"><span>โฮสติ้ง</span></label>
             <label class="checkbox-option"><input type="checkbox" name="Services" value="Email hosting"><span>อีเมลโฮสติ้ง</span></label>
             <label class="checkbox-option"><input type="checkbox" name="Services" value="CRM integration"><span>การเชื่อมต่อ CRM</span></label>
             <label class="checkbox-option"><input type="checkbox" name="Services" value="Company registration"><span>จดทะเบียนบริษัท</span></label>
@@ -297,21 +300,38 @@
       status.textContent = '';
       status.className = 'form-status';
 
-      var formData = new FormData(form);
-      var payload = Object.fromEntries(formData);
-      var services = formData.getAll('Services');
-      if (services.length) {
-        payload['Services'] = services.join(', ');
-      }
+      var sourceData = new FormData(form);
+      var services = sourceData.getAll('Services');
+      var leadData = new FormData();
+      leadData.append('xnQsjsdp', form.querySelector('[name="xnQsjsdp"]').value);
+      leadData.append('zc_gad', '');
+      leadData.append('xmIwtLD', form.querySelector('[name="xmIwtLD"]').value);
+      leadData.append('actionType', 'TGVhZHM=');
+      leadData.append('returnURL', 'null');
+      leadData.append('aG9uZXlwb3Q', form.querySelector('[name="aG9uZXlwb3Q"]').value);
+      leadData.append('Company', 'Not provided');
+      leadData.append('Last Name', sourceData.get('name') || '');
+      leadData.append('Email', sourceData.get('email') || '');
+      leadData.append('Phone', sourceData.get('Phone / LINE') || '');
+      leadData.append('Lead Source', 'Website');
+      leadData.append('Lead Status', 'New inquiry');
+      leadData.append('LEADCF4', sourceData.get('Preferred contact method') || '');
+      leadData.append('LEADCF5', sourceData.get('Tier interest') || '');
+      services.forEach(function (service) {
+        leadData.append('LEADCF3', service);
+      });
+      leadData.append('LEADCF6', 'Thai');
+      leadData.append('LEADCF1', 'Contact page - Thai');
+      leadData.append('LEADCF2', (sourceData.get('message') || '').slice(0, 255));
 
-      fetch('https://api.web3forms.com/submit', {
+      fetch('https://crm.zoho.com/crm/WebToLeadForm', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify(payload)
+        body: leadData,
+        cache: 'no-cache'
       })
-        .then(function (res) { return res.json(); })
+        .then(function (res) { return res.text(); })
         .then(function (data) {
-          if (data.success) {
+          if (data && !data.toLowerCase().includes('error')) {
             form.reset();
             status.textContent = 'ขอบคุณครับ/ค่ะ ส่งเรียบร้อยแล้ว เราจะติดต่อกลับภายในหนึ่งวันทำการ';
             status.className = 'form-status success';
