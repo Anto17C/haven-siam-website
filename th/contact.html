@@ -324,34 +324,40 @@
       leadData.append('LEADCF1', 'Contact page - Thai');
       leadData.append('LEADCF2', (sourceData.get('message') || '').slice(0, 255));
 
-      fetch('https://crm.zoho.com/crm/WebToLeadForm', {
-        method: 'POST',
-        body: leadData,
-        cache: 'no-cache'
-      })
-        .then(function (res) {
-          if (!res.ok) {
-            throw new Error('Zoho submission failed');
-          }
-          return res.text();
-        })
-        .then(function () {
-          form.reset();
-          status.textContent = 'ขอบคุณครับ/ค่ะ ส่งเรียบร้อยแล้ว เราจะติดต่อกลับภายในหนึ่งวันทำการ';
-          status.className = 'form-status success';
-          status.focus();
-          status.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        })
-        .catch(function () {
-          status.textContent = 'เกิดข้อผิดพลาด กรุณาลองใหม่อีกครั้ง หรือติดต่อเราโดยตรงทาง LINE หรืออีเมลด้านล่าง';
-          status.className = 'form-status error';
-          status.focus();
-          status.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        })
-        .finally(function () {
-          submitBtn.disabled = false;
-          submitBtn.textContent = 'ส่งข้อความ';
-        });
+      var frameName = 'zohoLeadFrame';
+      var frame = document.querySelector('iframe[name="' + frameName + '"]');
+      if (!frame) {
+        frame = document.createElement('iframe');
+        frame.name = frameName;
+        frame.style.display = 'none';
+        document.body.appendChild(frame);
+      }
+
+      var zohoForm = document.createElement('form');
+      zohoForm.action = 'https://crm.zoho.com/crm/WebToLeadForm';
+      zohoForm.method = 'POST';
+      zohoForm.target = frameName;
+      zohoForm.style.display = 'none';
+
+      leadData.forEach(function (value, key) {
+        var input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = key;
+        input.value = value;
+        zohoForm.appendChild(input);
+      });
+
+      document.body.appendChild(zohoForm);
+      zohoForm.submit();
+      zohoForm.remove();
+
+      form.reset();
+      status.textContent = 'ขอบคุณครับ/ค่ะ ส่งเรียบร้อยแล้ว เราจะติดต่อกลับภายในหนึ่งวันทำการ';
+      status.className = 'form-status success';
+      status.focus();
+      status.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'ส่งข้อความ';
     });
   </script>
 </body>
