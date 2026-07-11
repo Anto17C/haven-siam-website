@@ -36,7 +36,7 @@
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
       </button>
-      <a href="../index.html" class="lang-link-mobile">EN</a>
+      <a href="../contact.html" class="lang-link-mobile">EN</a>
       <div class="nav-group">
       <div class="nav-links" id="navLinks">
         <a href="index.html">หน้าแรก</a>
@@ -52,7 +52,7 @@
         <a href="about.html">เกี่ยวกับเรา</a>
       </div>
       <div class="lang-switch">
-        <a href="../index.html" class="lang-link">EN</a>
+        <a href="../contact.html" class="lang-link">EN</a>
       </div>
       <div class="nav-socials">
         <a href="tel:+66903247862" class="icon-link icon-phone" aria-label="โทรหา Haven Siam">
@@ -68,7 +68,7 @@
           <img src="../assets/icon-line.webp" alt="" width="783" height="783" loading="lazy">
         </a>
       </div>
-      <a href="contact.html" class="btn btn-coral nav-cta" aria-current="page">เริ่มต้นเลย</a>
+      <a href="#inquiryForm" class="btn btn-coral nav-cta">เริ่มต้นเลย</a>
       </div>
     </div>
   </nav>
@@ -96,13 +96,10 @@
         <p>บอกเราว่าคุณมีอะไรแล้ว ต้องการอะไร และอยากเริ่มเมื่อไหร่ เราจะช่วยแนะนำระดับบริการหรือชุดบริการที่เหมาะกับคุณ</p>
       </div>
 
-      <form id="inquiryForm" class="inquiry-form" action="https://crm.zoho.com/crm/WebToLeadForm" method="POST">
-        <input type="hidden" name="xnQsjsdp" value="1dcbd10d35638e7c7e4da4011c1cff5645d1e3e63c47296e5f1b3005b0796711">
-        <input type="hidden" name="zc_gad" id="zc_gad" value="">
-        <input type="hidden" name="xmIwtLD" value="69e05df0f166de7ab62d6435ff448ad26db7c6fc0985108d5d4c137e90321c5ab14bcc26feafaf20e9d197ae32713527">
-        <input type="hidden" name="actionType" value="TGVhZHM=">
-        <input type="hidden" name="returnURL" value="null">
-        <input type="text" name="aG9uZXlwb3Q" class="botcheck-field" tabindex="-1" autocomplete="off">
+      <form id="inquiryForm" class="inquiry-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="f5efa26a-0f75-4a95-bc88-8da7dddb3e95">
+        <input type="hidden" name="subject" value="New inquiry from the Haven Siam website (Thai)">
+        <input type="checkbox" name="botcheck" class="botcheck-field" tabindex="-1" autocomplete="off">
 
         <div class="form-row">
           <div class="form-field">
@@ -300,69 +297,43 @@
       status.textContent = '';
       status.className = 'form-status';
 
-      var sourceData = new FormData(form);
-      var services = sourceData.getAll('Services');
-      var leadFields = [
-        ['xnQsjsdp', form.querySelector('[name="xnQsjsdp"]').value],
-        ['zc_gad', ''],
-        ['xmIwtLD', form.querySelector('[name="xmIwtLD"]').value],
-        ['actionType', 'TGVhZHM='],
-        ['returnURL', 'null'],
-        ['aG9uZXlwb3Q', form.querySelector('[name="aG9uZXlwb3Q"]').value],
-        ['Company', 'Not provided'],
-        ['Last Name', sourceData.get('name') || ''],
-        ['Email', sourceData.get('email') || ''],
-        ['Phone', sourceData.get('Phone / LINE') || ''],
-        ['Lead Source', 'Website'],
-        ['Lead Status', 'New inquiry'],
-        ['LEADCF4', sourceData.get('Preferred contact method') || ''],
-        ['LEADCF5', sourceData.get('Tier interest') || ''],
-        ['LEADCF6', 'Thai'],
-        ['LEADCF1', 'Contact page - Thai'],
-        ['LEADCF2', (sourceData.get('message') || '').slice(0, 2000)]
-      ];
-      services.forEach(function (service) {
-        leadFields.push(['LEADCF3', service]);
-      });
-
-      form.reset();
-      status.textContent = 'ขอบคุณครับ/ค่ะ ส่งเรียบร้อยแล้ว เราจะติดต่อกลับภายในหนึ่งวันทำการ';
-      status.className = 'form-status success';
-      status.focus();
-      status.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      submitBtn.disabled = false;
-      submitBtn.textContent = 'ส่งข้อความ';
-
-      try {
-        var frameName = 'zohoLeadFrame';
-        var frame = document.querySelector('iframe[name="' + frameName + '"]');
-        if (!frame) {
-          frame = document.createElement('iframe');
-          frame.name = frameName;
-          frame.style.display = 'none';
-          document.body.appendChild(frame);
-        }
-
-        var zohoForm = document.createElement('form');
-        zohoForm.action = 'https://crm.zoho.com/crm/WebToLeadForm';
-        zohoForm.method = 'POST';
-        zohoForm.target = frameName;
-        zohoForm.style.display = 'none';
-
-        leadFields.forEach(function (field) {
-          var input = document.createElement('input');
-          input.type = 'hidden';
-          input.name = field[0];
-          input.value = field[1];
-          zohoForm.appendChild(input);
-        });
-
-        document.body.appendChild(zohoForm);
-        zohoForm.submit();
-        zohoForm.remove();
-      } catch (err) {
-        console.warn('Zoho background submission failed', err);
+      var formData = new FormData(form);
+      var payload = Object.fromEntries(formData);
+      var services = formData.getAll('Services');
+      if (services.length) {
+        payload['Services'] = services.join(', ');
       }
+
+      fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify(payload)
+      })
+        .then(function (res) { return res.json(); })
+        .then(function (data) {
+          if (data.success) {
+            form.reset();
+            status.textContent = 'ขอบคุณครับ/ค่ะ ส่งเรียบร้อยแล้ว เราจะติดต่อกลับภายในหนึ่งวันทำการ';
+            status.className = 'form-status success';
+            status.focus();
+            status.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          } else {
+            status.textContent = 'เกิดข้อผิดพลาด กรุณาลองใหม่อีกครั้ง หรือติดต่อเราโดยตรงทาง LINE หรืออีเมลด้านล่าง';
+            status.className = 'form-status error';
+            status.focus();
+            status.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+        })
+        .catch(function () {
+          status.textContent = 'เกิดข้อผิดพลาด กรุณาลองใหม่อีกครั้ง หรือติดต่อเราโดยตรงทาง LINE หรืออีเมลด้านล่าง';
+          status.className = 'form-status error';
+          status.focus();
+          status.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        })
+        .finally(function () {
+          submitBtn.disabled = false;
+          submitBtn.textContent = 'ส่งข้อความ';
+        });
     });
   </script>
 </body>
