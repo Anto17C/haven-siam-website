@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="430" height="96" viewBox="0 0 430 96" role="img" aria-label="Haven Siam logo">
+  <title>Haven Siam</title>
+  <defs>
+    <linearGradient id="markGrad" x1="44" y1="30" x2="202" y2="218" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0F655D"/>
+      <stop offset="1" stop-color="#073A37"/>
+    </linearGradient>
+    <filter id="softShadow" x="-25%" y="-25%" width="150%" height="150%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#063F3B" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+  <rect width="430" height="96" fill="none"/>
+  <g transform="translate(8 8) scale(.4166667)"><g>
+    <rect x="0" y="0" width="192" height="192" rx="52" fill="url(#markGrad)"/>
+    <path d="M54 54v84" fill="none" stroke="#FBF7EF" stroke-width="14" stroke-linecap="round"/>
+    <path d="M138 54v84" fill="none" stroke="#FBF7EF" stroke-width="14" stroke-linecap="round"/>
+    <path d="M58 96h76" fill="none" stroke="#FBF7EF" stroke-width="14" stroke-linecap="round"/>
+    <path d="M52 139c28 22 79 20 104-7 18-20 6-43-24-45-30-2-58 10-76 28" fill="none" stroke="#E8784F" stroke-width="10" stroke-linecap="round"/>
+    <path d="M35 78c35-36 89-44 124-20" fill="none" stroke="#D8C7AA" stroke-width="7" stroke-linecap="round" opacity="0.92"/>
+    <path d="M44 157c39 20 86 14 117-15" fill="none" stroke="#D8C7AA" stroke-width="7" stroke-linecap="round" opacity="0.92"/>
+    <circle cx="35" cy="78" r="7" fill="#E8784F"/>
+    <circle cx="158" cy="58" r="7" fill="#FBF7EF"/>
+    <circle cx="161" cy="142" r="7" fill="#E8784F"/>
+  </g></g>
+  <g transform="translate(104 12)">
+    <text x="0" y="35" font-family="Georgia, 'Times New Roman', serif" font-size="40" font-weight="700" fill="#FFFFFF" letter-spacing="-.5">Haven Siam</text>
+    <path d="M1 54h181" stroke="#D8C7AA" stroke-width="1.15"/>
+    <text x="1" y="75" font-family="Inter, Avenir, Helvetica, Arial, sans-serif" font-size="13.7" font-weight="700" fill="#FBF7EF" letter-spacing="2.15">SETTLE · LAUNCH · OPERATE</text>
+  </g>
+</svg>
