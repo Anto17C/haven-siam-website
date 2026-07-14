@@ -1055,11 +1055,11 @@ img {
     justify-content: space-between;
     min-height: 62px;
   }
-  .logo {
+  .navbar .logo {
     order: 1;
     margin-right: 0;
   }
-  .logo img {
+  .navbar .logo img {
     content: url("../assets/logo-assets/logo-mark.svg");
     width: 48px;
     height: 48px;
@@ -1071,6 +1071,7 @@ img {
     align-items: center;
     gap: clamp(8px, 2.4vw, 11px);
     margin-left: auto;
+    margin-right: 10px;
   }
   .nav-socials .icon-link img {
     width: 17px;
@@ -1082,7 +1083,7 @@ img {
   }
   .nav-cta {
     margin-right: 0;
-    padding: 10px 16px;
+    padding: 10px 12px;
   }
   .lang-link-mobile {
     order: 4;
