@@ -1,4 +1,4 @@
 Contact: mailto:hs@havensiam.com
-Expires: 2027-07-10T00:00:00.000Z
-Preferred-Languages: en, th
+Expires: 2027-07-13T00:00:00.000Z
+Preferred-Languages: en, th, fr
 Canonical: https://havensiam.com/.well-known/security.txt
