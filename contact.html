@@ -99,9 +99,9 @@
 
       <iframe name="zohoLeadFrame" id="zohoLeadFrame" style="display:none;" title="Zoho lead submission"></iframe>
       <form id="inquiryForm" class="inquiry-form" action="https://crm.zoho.com/crm/WebToLeadForm" method="POST" target="zohoLeadFrame" accept-charset="UTF-8">
-        <input type="hidden" name="xnQsjsdp" value="3d461b47b1fcc5cfdaa91239d608004f0092f68f141c55093d98ad87d8db82fb">
+        <input type="hidden" name="xnQsjsdp" value="0bc8ee31ce42d8393ba66f0171964fbb360f219a79621213f7b695e019ef4136">
         <input type="hidden" name="zc_gad" id="zc_gad" value="">
-        <input type="hidden" name="xmIwtLD" value="1103c296117df560d06cb8b63799fa110b785d2fa04117421354737c2ddf91c3a58b4fc6681624baecb85e29174c6ece">
+        <input type="hidden" name="xmIwtLD" value="0f979852ec44bacbfc3cfba52238812da6ca5cedb3e3cf49ae9d027814277947927cad7875595f043b0c108a90fa04a2">
         <input type="hidden" name="actionType" value="TGVhZHM=">
         <input type="hidden" name="returnURL" value="null">
         <input type="hidden" name="LEADCF6" value="English">
@@ -320,14 +320,23 @@
       }
     }
 
+    function setSourcePage() {
+      var sourceField = form.querySelector('[name="LEADCF1"]');
+      if (!sourceField) return;
+
+      sourceField.value = window.location.href;
+      sourceField.setAttribute('value', window.location.href);
+    }
+
+    setSourcePage();
+
     form.addEventListener('submit', function (e) {
       if (!form.reportValidity()) {
         e.preventDefault();
         return;
       }
 
-      var sourceField = form.querySelector('[name="LEADCF1"]');
-      if (sourceField) sourceField.value = window.location.href;
+      setSourcePage();
 
       hideFormMessages();
       submitBtn.disabled = true;
