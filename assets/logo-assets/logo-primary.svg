@@ -23,7 +23,7 @@
     <circle cx="158" cy="58" r="7" fill="#FBF7EF"/>
     <circle cx="161" cy="142" r="7" fill="#E8784F"/>
   </g></g>
-  <g transform="translate(278 72) scale(1.15)">
+  <g transform="translate(278 72) scale(1.25)">
     <text x="0" y="61" font-family="Georgia, 'Times New Roman', serif" font-size="70" font-weight="700" fill="#063F3B" letter-spacing="-1">Haven Siam</text>
     <path d="M2 93h316" stroke="#D8C7AA" stroke-width="2"/>
     <text x="2" y="130" font-family="Inter, Avenir, Helvetica, Arial, sans-serif" font-size="24" font-weight="700" fill="#0E5A53" letter-spacing="3.8">SETTLE · LAUNCH · OPERATE</text>
