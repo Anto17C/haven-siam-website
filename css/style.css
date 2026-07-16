@@ -1053,7 +1053,8 @@ img {
   .navbar-inner {
     gap: 10px;
     justify-content: space-between;
-    min-height: 62px;
+    padding: 0;
+    min-height: 72px;
   }
   .navbar .logo {
     order: 1;
