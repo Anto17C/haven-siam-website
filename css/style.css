@@ -1206,6 +1206,18 @@ img {
   }
 }
 
+/* ---------- Desktop: standard 72px header ---------- */
+@media (min-width: 961px) {
+  .navbar-inner {
+    padding: 0;
+    height: 72px;
+  }
+  .logo img {
+    width: auto;
+    height: 46px;
+  }
+}
+
 @media (max-width: 640px) {
   .navbar {
     padding-left: 2rem;
