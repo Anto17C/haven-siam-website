@@ -414,12 +414,12 @@ img {
   max-width: 620px;
 }
 
-.relocation-checklist-hero {
-  height: 450px;
-}
-
 .relocation-checklist-hero .hero-copy {
   max-width: 900px;
+}
+
+.relocation-checklist-hero .hero-copy h1 {
+  max-width: 860px;
 }
 
 .relocation-checklist-hero .hero-copy .subhead,
