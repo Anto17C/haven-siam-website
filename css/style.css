@@ -414,6 +414,25 @@ img {
   max-width: 620px;
 }
 
+.relocation-checklist-hero {
+  height: 560px;
+}
+
+.relocation-checklist-hero .hero-inner {
+  padding-top: 4.75rem;
+  padding-bottom: 3.25rem;
+}
+
+.relocation-checklist-hero .hero-copy h1 {
+  font-size: clamp(2.85rem, 4.7vw, 4.9rem);
+  line-height: 1.04;
+  margin-bottom: 1.6rem;
+}
+
+.relocation-checklist-hero .hero-copy .subhead {
+  line-height: 1.62;
+}
+
 .hero-bg-image {
   position: absolute;
   top: 0;
