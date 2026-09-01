@@ -1739,13 +1739,6 @@ img {
   }
 }
 
-@media (min-width: 1000px) {
-  .contact-section-intro h2,
-  .contact-section-intro p:not(.eyebrow) {
-    white-space: nowrap;
-  }
-}
-
 /* ---------- SEO landing pages ---------- */
 .faq-list {
   margin-top: 24px;
