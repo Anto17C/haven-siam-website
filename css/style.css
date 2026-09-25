@@ -282,6 +282,80 @@ img {
   color: var(--coral-600);
 }
 
+/* Language dropdown: the pill shows the current language, the menu lists the other two. */
+.lang-switch.nav-dropdown {
+  position: relative;
+}
+
+.lang-switch .lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 36px;
+  padding: 0 12px;
+  border: 1px solid var(--border-light);
+  border-radius: 20px;
+  background: transparent;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--teal-950);
+  cursor: pointer;
+  transition: background 160ms ease;
+}
+
+.lang-switch .lang-toggle svg {
+  width: 16px;
+  height: 16px;
+  flex: none;
+}
+
+.lang-switch .lang-toggle::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: rotate(45deg) translateY(-2px);
+  opacity: 0.7;
+}
+
+.lang-switch .lang-toggle:hover {
+  background: var(--cream);
+}
+
+.lang-switch .lang-toggle:focus-visible {
+  outline: 2px solid var(--teal-950);
+  outline-offset: 2px;
+}
+
+.lang-switch .lang-menu {
+  left: auto;
+  right: 0;
+  min-width: 170px;
+  transform: translateY(4px);
+}
+
+.lang-switch:hover .lang-menu,
+.lang-switch:focus-within .lang-menu {
+  transform: translateY(0);
+}
+
+.lang-switch .lang-menu a {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+  white-space: nowrap;
+}
+
+.lang-switch .lang-code {
+  color: var(--ink-faint);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
 .sticky-whatsapp,
 .sticky-line {
   position: fixed;
