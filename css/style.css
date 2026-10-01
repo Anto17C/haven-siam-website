@@ -485,11 +485,11 @@ img {
 }
 
 .page-hero .hero-copy {
-  max-width: 800px;
+  max-width: 640px;
 }
 
 .page-hero .hero-copy h1 {
-  max-width: 800px;
+  max-width: 640px;
 }
 
 /* Interior hero titles sized to match Baanward's inner-page hero scale; homepage hero is unaffected. */
