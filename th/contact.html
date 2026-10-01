@@ -365,6 +365,23 @@
         }, 1800);
       }, 900);
     });
+
+    var tierParam = new URLSearchParams(window.location.search).get('tier');
+    if (tierParam) {
+      var tierMap = {
+        '1': 'Tier 1 - Digital foundation',
+        '2': 'Tier 2 - Business launch',
+        '3': 'Tier 3 - Full concierge'
+      };
+      var tierValue = tierMap[tierParam];
+      var tierRadio = tierValue && form.querySelector('input[name="LEADCF5"][value="' + tierValue + '"]');
+      if (tierRadio) {
+        tierRadio.checked = true;
+        window.setTimeout(function () {
+          tierRadio.closest('fieldset').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 300);
+      }
+    }
   </script>
 </body>
 </html>
