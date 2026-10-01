@@ -952,7 +952,7 @@ img {
 }
 
 .footer-brand p {
-  font-size: 13px;
+  font-size: 12.8px;
   color: var(--teal-100);
   line-height: 1.6;
   max-width: 260px;
@@ -960,7 +960,7 @@ img {
 
 .footer-col h4 {
   display: inline-block;
-  font-size: 12.5px;
+  font-size: 13.6px;
   font-weight: 600;
   color: var(--cream);
   margin-bottom: 16px;
@@ -971,7 +971,7 @@ img {
 
 .footer-col a, .footer-col p {
   display: block;
-  font-size: 13px;
+  font-size: 12.8px;
   color: var(--teal-100);
   margin-bottom: 10px;
   line-height: 1.5;
@@ -991,7 +991,7 @@ img {
   display: flex;
   align-items: center;
   gap: 7px;
-  font-size: 13px;
+  font-size: 12.8px;
   margin-bottom: 7px;
   color: var(--teal-100);
 }
@@ -1057,7 +1057,7 @@ img {
   max-width: none;
   margin: 0 -2rem;
   padding: 1.25rem max(2rem, calc((100vw - 1160px) / 2 + 2rem));
-  font-size: 12px;
+  font-size: 11.2px;
   color: var(--teal-100);
   display: flex;
   justify-content: space-between;
@@ -2014,7 +2014,7 @@ img {
   display: flex;
   gap: 16px;
   justify-content: flex-end;
-  font-size: 12px;
+  font-size: 11.2px;
 }
 
 .footer-legal-links a {
