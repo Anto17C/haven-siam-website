@@ -492,6 +492,13 @@ img {
   max-width: 800px;
 }
 
+/* Interior hero titles sized to match Baanward's inner-page hero scale; homepage hero is unaffected. */
+@media (min-width: 641px) {
+  .page-hero .hero-copy h1 {
+    font-size: 32px;
+  }
+}
+
 .relocation-checklist-hero .hero-copy {
   max-width: 900px;
 }
