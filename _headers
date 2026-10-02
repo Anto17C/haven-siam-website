@@ -6,6 +6,11 @@
   X-XSS-Protection: 1; mode=block
   Strict-Transport-Security: max-age=31536000
 
+# Cloudflare Pages merges the Cache-Control values of every matching rule, so each
+# path below must match exactly one rule (no overlapping extension/directory rules).
+# Nothing here is content-hashed, so no rule may use "immutable": an in-place edit
+# would otherwise stay stale in returning visitors' browsers.
+
 /*.html
   Cache-Control: public, max-age=0, must-revalidate
 
@@ -15,23 +20,6 @@
 /js/*
   Cache-Control: public, max-age=0, must-revalidate
 
+# Logos, favicons, photos and icons: cached for a day, then revalidated (ETag/304).
 /assets/*
-  Cache-Control: public, max-age=2592000, immutable
-
-/images/*
-  Cache-Control: public, max-age=2592000, immutable
-
-/*.webp
-  Cache-Control: public, max-age=2592000, immutable
-
-/*.jpg
-  Cache-Control: public, max-age=2592000, immutable
-
-/*.png
-  Cache-Control: public, max-age=2592000, immutable
-
-/*.svg
-  Cache-Control: public, max-age=2592000, immutable
-
-/*.ico
-  Cache-Control: public, max-age=2592000, immutable
+  Cache-Control: public, max-age=86400, must-revalidate
