@@ -357,6 +357,16 @@
       submitBtn.textContent = 'Sending...';
 
       window.setTimeout(function () {
+        var tierChoice = form.querySelector('input[name="LEADCF5"]:checked');
+        var services = Array.prototype.map.call(form.querySelectorAll('input[name="LEADCF3"]:checked'), function (c) { return c.value; });
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+          event: 'generate_lead',
+          lead_service: tierChoice ? tierChoice.value : (services.length ? 'Custom mix' : 'Not specified'),
+          lead_services_selected: services.join(', '),
+          lead_language: form.querySelector('[name="LEADCF6"]').value,
+          lead_preferred_contact: form.querySelector('[name="LEADCF4"]').value
+        });
         form.reset();
         if (success) {
           success.style.display = 'block';
