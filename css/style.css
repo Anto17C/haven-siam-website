@@ -2112,3 +2112,8 @@ img {
 @media (max-width: 860px) {
   .footer-legal-links { justify-content: center; }
 }
+
+/* Closing line under a FAQ-style list */
+.faq-list + .service-desc {
+  margin-top: 1.75rem;
+}
