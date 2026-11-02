@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /33g4/
 
 Sitemap: https://havensiam.com/sitemap.xml
