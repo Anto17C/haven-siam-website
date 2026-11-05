@@ -1,183 +1,564 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://havensiam.com/</loc>
     <lastmod>2026-09-25</lastmod>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/"/>
   </url>
   <url>
     <loc>https://havensiam.com/how-it-works</loc>
     <lastmod>2026-09-25</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/how-it-works"/>
   </url>
   <url>
     <loc>https://havensiam.com/services</loc>
     <lastmod>2026-09-25</lastmod>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/services"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/services"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/services"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/services"/>
   </url>
   <url>
     <loc>https://havensiam.com/pricing</loc>
     <lastmod>2026-09-25</lastmod>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/pricing"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/pricing"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/pricing"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/pricing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/pricing"/>
   </url>
   <url>
     <loc>https://havensiam.com/about</loc>
     <lastmod>2026-09-25</lastmod>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/about"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/about"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/about"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/about"/>
   </url>
   <url>
     <loc>https://havensiam.com/contact</loc>
     <lastmod>2026-09-25</lastmod>
     <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/contact"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/contact"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/contact"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/contact"/>
   </url>
   <url>
     <loc>https://havensiam.com/online-platform-business-thailand</loc>
     <lastmod>2026-10-01</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/online-platform-business-thailand"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/online-platform-business-thailand"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/online-platform-business-thailand"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/online-platform-business-thailand"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/online-platform-business-thailand"/>
   </url>
   <url>
     <loc>https://havensiam.com/register-company-thailand</loc>
     <lastmod>2026-09-25</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/register-company-thailand"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/register-company-thailand"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/register-company-thailand"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/register-company-thailand"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/register-company-thailand"/>
+  </url>
+  <url>
+    <loc>https://havensiam.com/company-registration-rayong</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/company-registration-rayong"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/company-registration-rayong"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/company-registration-rayong"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/company-registration-rayong"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/company-registration-rayong"/>
+  </url>
+  <url>
+    <loc>https://havensiam.com/company-registration-pattaya</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/company-registration-pattaya"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/company-registration-pattaya"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/company-registration-pattaya"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/company-registration-pattaya"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/company-registration-pattaya"/>
+  </url>
+  <url>
+    <loc>https://havensiam.com/company-registration-chonburi</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/company-registration-chonburi"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/company-registration-chonburi"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/company-registration-chonburi"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/company-registration-chonburi"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/company-registration-chonburi"/>
   </url>
   <url>
     <loc>https://havensiam.com/relocate-to-thailand</loc>
     <lastmod>2026-09-25</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/relocate-to-thailand"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/relocate-to-thailand"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/relocate-to-thailand"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/relocate-to-thailand"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/relocate-to-thailand"/>
   </url>
   <url>
     <loc>https://havensiam.com/privacy</loc>
     <lastmod>2026-09-25</lastmod>
     <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/privacy"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/privacy"/>
   </url>
   <url>
     <loc>https://havensiam.com/terms</loc>
     <lastmod>2026-09-25</lastmod>
     <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/terms"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/terms"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/terms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/terms"/>
   </url>
   <url>
     <loc>https://havensiam.com/disclaimer</loc>
     <lastmod>2026-09-25</lastmod>
     <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/disclaimer"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/disclaimer"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/disclaimer"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/disclaimer"/>
   </url>
   <url>
     <loc>https://havensiam.com/th/</loc>
     <lastmod>2026-09-25</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/"/>
   </url>
   <url>
     <loc>https://havensiam.com/th/how-it-works</loc>
     <lastmod>2026-09-25</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/how-it-works"/>
   </url>
   <url>
     <loc>https://havensiam.com/th/services</loc>
     <lastmod>2026-09-25</lastmod>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/services"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/services"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/services"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/services"/>
   </url>
   <url>
     <loc>https://havensiam.com/th/pricing</loc>
     <lastmod>2026-09-25</lastmod>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/pricing"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/pricing"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/pricing"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/pricing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/pricing"/>
   </url>
   <url>
     <loc>https://havensiam.com/th/about</loc>
     <lastmod>2026-09-25</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/about"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/about"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/about"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/about"/>
   </url>
   <url>
     <loc>https://havensiam.com/th/contact</loc>
     <lastmod>2026-09-25</lastmod>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/contact"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/contact"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/contact"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/contact"/>
   </url>
   <url>
     <loc>https://havensiam.com/th/register-company-thailand</loc>
     <lastmod>2026-09-25</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/register-company-thailand"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/register-company-thailand"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/register-company-thailand"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/register-company-thailand"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/register-company-thailand"/>
+  </url>
+  <url>
+    <loc>https://havensiam.com/th/company-registration-rayong</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/company-registration-rayong"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/company-registration-rayong"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/company-registration-rayong"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/company-registration-rayong"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/company-registration-rayong"/>
+  </url>
+  <url>
+    <loc>https://havensiam.com/th/company-registration-pattaya</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/company-registration-pattaya"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/company-registration-pattaya"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/company-registration-pattaya"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/company-registration-pattaya"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/company-registration-pattaya"/>
+  </url>
+  <url>
+    <loc>https://havensiam.com/th/company-registration-chonburi</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/company-registration-chonburi"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/company-registration-chonburi"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/company-registration-chonburi"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/company-registration-chonburi"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/company-registration-chonburi"/>
   </url>
   <url>
     <loc>https://havensiam.com/th/online-platform-business-thailand</loc>
     <lastmod>2026-10-01</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/online-platform-business-thailand"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/online-platform-business-thailand"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/online-platform-business-thailand"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/online-platform-business-thailand"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/online-platform-business-thailand"/>
   </url>
   <url>
     <loc>https://havensiam.com/th/relocate-to-thailand</loc>
     <lastmod>2026-09-25</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/relocate-to-thailand"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/relocate-to-thailand"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/relocate-to-thailand"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/relocate-to-thailand"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/relocate-to-thailand"/>
   </url>
   <url>
     <loc>https://havensiam.com/th/privacy</loc>
     <lastmod>2026-09-25</lastmod>
     <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/privacy"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/privacy"/>
   </url>
   <url>
     <loc>https://havensiam.com/th/terms</loc>
     <lastmod>2026-09-25</lastmod>
     <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/terms"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/terms"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/terms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/terms"/>
   </url>
   <url>
     <loc>https://havensiam.com/th/disclaimer</loc>
     <lastmod>2026-09-25</lastmod>
     <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/disclaimer"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/disclaimer"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/disclaimer"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/disclaimer"/>
   </url>
   <url>
     <loc>https://havensiam.com/fr/</loc>
     <lastmod>2026-09-25</lastmod>
     <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/"/>
   </url>
   <url>
     <loc>https://havensiam.com/fr/how-it-works</loc>
     <lastmod>2026-09-25</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/how-it-works"/>
   </url>
   <url>
     <loc>https://havensiam.com/fr/services</loc>
     <lastmod>2026-09-25</lastmod>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/services"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/services"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/services"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/services"/>
   </url>
   <url>
     <loc>https://havensiam.com/fr/pricing</loc>
     <lastmod>2026-09-25</lastmod>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/pricing"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/pricing"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/pricing"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/pricing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/pricing"/>
   </url>
   <url>
     <loc>https://havensiam.com/fr/about</loc>
     <lastmod>2026-09-25</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/about"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/about"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/about"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/about"/>
   </url>
   <url>
     <loc>https://havensiam.com/fr/contact</loc>
     <lastmod>2026-09-25</lastmod>
     <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/contact"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/contact"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/contact"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/contact"/>
   </url>
   <url>
     <loc>https://havensiam.com/fr/register-company-thailand</loc>
     <lastmod>2026-09-25</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/register-company-thailand"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/register-company-thailand"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/register-company-thailand"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/register-company-thailand"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/register-company-thailand"/>
+  </url>
+  <url>
+    <loc>https://havensiam.com/fr/company-registration-rayong</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/company-registration-rayong"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/company-registration-rayong"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/company-registration-rayong"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/company-registration-rayong"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/company-registration-rayong"/>
+  </url>
+  <url>
+    <loc>https://havensiam.com/fr/company-registration-pattaya</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/company-registration-pattaya"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/company-registration-pattaya"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/company-registration-pattaya"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/company-registration-pattaya"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/company-registration-pattaya"/>
+  </url>
+  <url>
+    <loc>https://havensiam.com/fr/company-registration-chonburi</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/company-registration-chonburi"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/company-registration-chonburi"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/company-registration-chonburi"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/company-registration-chonburi"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/company-registration-chonburi"/>
   </url>
   <url>
     <loc>https://havensiam.com/fr/online-platform-business-thailand</loc>
     <lastmod>2026-10-01</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/online-platform-business-thailand"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/online-platform-business-thailand"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/online-platform-business-thailand"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/online-platform-business-thailand"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/online-platform-business-thailand"/>
   </url>
   <url>
     <loc>https://havensiam.com/fr/relocate-to-thailand</loc>
     <lastmod>2026-09-25</lastmod>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/relocate-to-thailand"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/relocate-to-thailand"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/relocate-to-thailand"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/relocate-to-thailand"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/relocate-to-thailand"/>
   </url>
   <url>
     <loc>https://havensiam.com/fr/privacy</loc>
     <lastmod>2026-09-25</lastmod>
     <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/privacy"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/privacy"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/privacy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/privacy"/>
   </url>
   <url>
     <loc>https://havensiam.com/fr/terms</loc>
     <lastmod>2026-09-25</lastmod>
     <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/terms"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/terms"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/terms"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/terms"/>
   </url>
   <url>
     <loc>https://havensiam.com/fr/disclaimer</loc>
     <lastmod>2026-09-25</lastmod>
     <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/disclaimer"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/disclaimer"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/disclaimer"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/disclaimer"/>
+  </url>
+  <url>
+    <loc>https://havensiam.com/zh/</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/"/>
+  </url>
+  <url>
+    <loc>https://havensiam.com/zh/services</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/services"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/services"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/services"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/services"/>
+  </url>
+  <url>
+    <loc>https://havensiam.com/zh/pricing</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/pricing"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/pricing"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/pricing"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/pricing"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/pricing"/>
+  </url>
+  <url>
+    <loc>https://havensiam.com/zh/how-it-works</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/how-it-works"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/how-it-works"/>
+  </url>
+  <url>
+    <loc>https://havensiam.com/zh/about</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/about"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/about"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/about"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/about"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/about"/>
+  </url>
+  <url>
+    <loc>https://havensiam.com/zh/contact</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/contact"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/contact"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/contact"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/contact"/>
+  </url>
+  <url>
+    <loc>https://havensiam.com/zh/register-company-thailand</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/register-company-thailand"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/register-company-thailand"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/register-company-thailand"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/register-company-thailand"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/register-company-thailand"/>
+  </url>
+  <url>
+    <loc>https://havensiam.com/zh/relocate-to-thailand</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/relocate-to-thailand"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/relocate-to-thailand"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/relocate-to-thailand"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/relocate-to-thailand"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/relocate-to-thailand"/>
+  </url>
+  <url>
+    <loc>https://havensiam.com/zh/online-platform-business-thailand</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/online-platform-business-thailand"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/online-platform-business-thailand"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/online-platform-business-thailand"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/online-platform-business-thailand"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/online-platform-business-thailand"/>
+  </url>
+  <url>
+    <loc>https://havensiam.com/zh/company-registration-rayong</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/company-registration-rayong"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/company-registration-rayong"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/company-registration-rayong"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/company-registration-rayong"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/company-registration-rayong"/>
+  </url>
+  <url>
+    <loc>https://havensiam.com/zh/company-registration-pattaya</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/company-registration-pattaya"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/company-registration-pattaya"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/company-registration-pattaya"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/company-registration-pattaya"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/company-registration-pattaya"/>
+  </url>
+  <url>
+    <loc>https://havensiam.com/zh/company-registration-chonburi</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/company-registration-chonburi"/>
+    <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/company-registration-chonburi"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/company-registration-chonburi"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/company-registration-chonburi"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/company-registration-chonburi"/>
   </url>
 </urlset>

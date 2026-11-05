@@ -14,6 +14,11 @@
   <title>Contact Haven Siam — Start Your Thailand Business Setup</title>
   <meta name="description" content="Tell us where you are in the process — pick a tier, mix specific services, or just ask a question. We'll follow up within one business day.">
   <link rel="canonical" href="https://havensiam.com/contact">
+  <link rel="alternate" hreflang="en" href="https://havensiam.com/contact">
+  <link rel="alternate" hreflang="th" href="https://havensiam.com/th/contact">
+  <link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/contact">
+  <link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/contact">
+  <link rel="alternate" hreflang="x-default" href="https://havensiam.com/contact">
   <meta property="og:site_name" content="Haven Siam">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,7 +43,7 @@
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
       </button>
-      <div class="lang-link-mobile"><a href="th/contact">ไทย</a><span class="lang-divider-mobile">/</span><a href="fr/contact">FR</a></div>
+      <div class="lang-link-mobile"><a href="th/contact">ไทย</a><span class="lang-divider-mobile">/</span><a href="fr/contact">FR</a><span class="lang-divider-mobile">/</span><a href="zh/contact">中文</a></div>
       <div class="nav-group">
       <div class="nav-links" id="navLinks">
         <a href="./">Home</a>
@@ -46,6 +51,7 @@
           <a href="how-it-works" class="nav-dropdown-trigger">How it works</a>
           <div class="nav-dropdown-menu">
             <a href="register-company-thailand">Register a company</a>
+            <a href="company-registration-rayong">Company registration in Rayong</a>
             <a href="relocate-to-thailand">Relocation checklist</a>
             <a href="online-platform-business-thailand">Platform &amp; marketplace businesses</a>
           </div>
@@ -59,6 +65,7 @@
         <div class="nav-dropdown-menu lang-menu" role="group" aria-label="Language">
           <a href="th/contact" lang="th" hreflang="th"><span>ไทย</span><span class="lang-code" aria-hidden="true">TH</span></a>
           <a href="fr/contact" lang="fr" hreflang="fr"><span>Français</span><span class="lang-code" aria-hidden="true">FR</span></a>
+          <a href="zh/contact" lang="zh-Hant" hreflang="zh-Hant"><span>繁體中文</span><span class="lang-code" aria-hidden="true">ZH</span></a>
         </div>
       </div>
       <div class="nav-socials">
@@ -104,38 +111,36 @@
         <p>We reply in English, Thai or French, by email, WhatsApp or LINE.</p>
       </div>
 
-      <iframe name="zohoLeadFrame" id="zohoLeadFrame" style="display:none;" title="Zoho lead submission"></iframe>
-      <form id="inquiryForm" class="inquiry-form" action="https://crm.zoho.com/crm/WebToLeadForm" method="POST" target="zohoLeadFrame" accept-charset="UTF-8">
-        <input type="hidden" name="xnQsjsdp" value="0bc8ee31ce42d8393ba66f0171964fbb360f219a79621213f7b695e019ef4136">
-        <input type="hidden" name="zc_gad" id="zc_gad" value="">
-        <input type="hidden" name="xmIwtLD" value="0f979852ec44bacbfc3cfba52238812da6ca5cedb3e3cf49ae9d027814277947927cad7875595f043b0c108a90fa04a2">
-        <input type="hidden" name="actionType" value="TGVhZHM=">
-        <input type="hidden" name="returnURL" value="null">
-        <input type="hidden" name="LEADCF6" value="English">
-        <input type="hidden" name="LEADCF1" value="">
-        <input type="text" name="aG9uZXlwb3Q" class="botcheck-field" tabindex="-1" autocomplete="off" value="">
+      <form id="inquiryForm" class="inquiry-form" action="https://api.web3forms.com/submit" method="POST" accept-charset="UTF-8">
+        <!-- Web3Forms access key for Haven Siam (public by design; delivery recipient is set in the Web3Forms account). -->
+        <input type="hidden" name="subject" value="Haven Siam website inquiry">
+        <input type="hidden" name="from_name" value="Haven Siam website">
+        <input type="hidden" name="access_key" value="f5efa26a-0f75-4a95-bc88-8da7dddb3e95">
+        <div hidden><input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-label="Leave unchecked"></div>
+        <input type="hidden" name="website_language" value="English">
+        <input type="hidden" name="source_page" value="">
         <div id="formSuccess" class="form-success" role="status" aria-live="polite">Thank you — your inquiry has been sent. We’ll review the details and get back to you within one business day.</div>
         <div id="formError" class="form-error" role="alert" aria-live="assertive"></div>
 
         <div class="form-row">
           <div class="form-field">
             <label for="name">Name</label>
-            <input type="text" id="name" name="Last Name" required>
+            <input type="text" id="name" name="name" required>
           </div>
           <div class="form-field">
             <label for="email">Email</label>
-            <input type="email" id="email" name="Email" required>
+            <input type="email" id="email" name="email" required>
           </div>
         </div>
 
         <div class="form-row">
           <div class="form-field">
             <label for="contact_handle">Phone, WhatsApp, or LINE (optional)</label>
-            <input type="text" id="contact_handle" name="Phone">
+            <input type="text" id="contact_handle" name="phone">
           </div>
           <div class="form-field">
             <label for="preferred_contact">Preferred contact method</label>
-            <select id="preferred_contact" name="LEADCF4">
+            <select id="preferred_contact" name="preferred_contact">
               <option value="Email">Email</option>
               <option value="WhatsApp">WhatsApp</option>
               <option value="LINE">LINE</option>
@@ -149,28 +154,28 @@
           <p class="form-hint">Not sure yet? Leave this blank and tell us in the message below.</p>
           <div class="radio-grid">
             <label class="radio-option">
-              <input type="radio" name="LEADCF5" value="Tier 1 - Digital foundation">
+              <input type="radio" name="tier_interest" value="Tier 1 - Digital foundation">
               <span>
                 <strong>Tier 1 — Digital foundation</strong>
-                <small>Website design, domain registration, hosting, business email, CRM, SEO and analytics setup.</small>
+                <small>Website design, domain registration, hosting, business email, CRM, SEO, AI search visibility and analytics setup.</small>
               </span>
             </label>
             <label class="radio-option">
-              <input type="radio" name="LEADCF5" value="Tier 2 - Business launch">
+              <input type="radio" name="tier_interest" value="Tier 2 - Business launch">
               <span>
                 <strong>Tier 2 — Business launch</strong>
                 <small>Tier 1 plus company registration, BOI, visa and work permit coordination with Thai partners.</small>
               </span>
             </label>
             <label class="radio-option">
-              <input type="radio" name="LEADCF5" value="Tier 3 - Full concierge">
+              <input type="radio" name="tier_interest" value="Tier 3 - Full concierge">
               <span>
                 <strong>Tier 3 — Full concierge</strong>
                 <small>Tier 2 plus bookkeeping, tax filing coordination and multilingual content support.</small>
               </span>
             </label>
             <label class="radio-option">
-              <input type="radio" name="LEADCF5" value="Not sure yet">
+              <input type="radio" name="tier_interest" value="Not sure yet">
               <span>Not sure yet</span>
             </label>
           </div>
@@ -179,25 +184,25 @@
         <fieldset class="form-fieldset">
           <legend>Or, specific services you need (check any)</legend>
           <div class="checkbox-grid">
-            <label class="checkbox-option"><input type="checkbox" name="LEADCF3" value="Website design"><span>Website design</span></label>
-            <label class="checkbox-option"><input type="checkbox" name="LEADCF3" value="Domain registration"><span>Domain registration</span></label>
-            <label class="checkbox-option"><input type="checkbox" name="LEADCF3" value="Web hosting"><span>Web hosting</span></label>
-            <label class="checkbox-option"><input type="checkbox" name="LEADCF3" value="Email hosting"><span>Email hosting</span></label>
-            <label class="checkbox-option"><input type="checkbox" name="LEADCF3" value="CRM integration"><span>CRM integration</span></label>
-            <label class="checkbox-option"><input type="checkbox" name="LEADCF3" value="SEO &amp; Analytics"><span>SEO &amp; Analytics</span></label>
-            <label class="checkbox-option"><input type="checkbox" name="LEADCF3" value="Company registration"><span>Company registration</span></label>
-            <label class="checkbox-option"><input type="checkbox" name="LEADCF3" value="BOI application"><span>BOI application</span></label>
-            <label class="checkbox-option"><input type="checkbox" name="LEADCF3" value="Visa application"><span>Visa application</span></label>
-            <label class="checkbox-option"><input type="checkbox" name="LEADCF3" value="Work permit"><span>Work permit</span></label>
-            <label class="checkbox-option"><input type="checkbox" name="LEADCF3" value="Accounting / bookkeeping"><span>Accounting / bookkeeping</span></label>
-            <label class="checkbox-option"><input type="checkbox" name="LEADCF3" value="Translation / content"><span>Translation / content</span></label>
+            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Website design"><span>Website design</span></label>
+            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Domain registration"><span>Domain registration</span></label>
+            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Web hosting"><span>Web hosting</span></label>
+            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Email hosting"><span>Email hosting</span></label>
+            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="CRM integration"><span>CRM integration</span></label>
+            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="SEO &amp; Analytics"><span>SEO, AI Search Visibility &amp; Analytics</span></label>
+            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Company registration"><span>Company registration</span></label>
+            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="BOI application"><span>BOI application</span></label>
+            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Visa application"><span>Visa application</span></label>
+            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Work permit"><span>Work permit</span></label>
+            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Accounting / bookkeeping"><span>Accounting / bookkeeping</span></label>
+            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Translation / content"><span>Translation / content</span></label>
           </div>
         </fieldset>
 
         <div class="form-field">
           <label for="message">Anything else we should know?</label>
           <p class="form-hint">For a company setup, it helps to mention: your nationality, what the business will do, who will own it, whether you have premises, how many foreign staff need visas, and your timeline.</p>
-          <textarea id="message" name="LEADCF7" rows="5" placeholder="Tell us about your situation, timeline, or any questions."></textarea>
+          <textarea id="message" name="message" rows="5" placeholder="Tell us about your situation, timeline, or any questions."></textarea>
         </div>
 
         <button type="submit" class="btn btn-coral form-submit" id="submitBtn">Send</button>
@@ -236,6 +241,7 @@
         <a href="pricing">Pricing</a>
         <a href="about">About</a>
         <a href="register-company-thailand">Register a company</a>
+        <a href="company-registration-rayong">Company registration in Rayong</a>
         <a href="relocate-to-thailand">Relocation checklist</a>
         <a href="online-platform-business-thailand">Platform &amp; marketplace businesses</a>
       </div>
@@ -338,7 +344,7 @@
     }
 
     function setSourcePage() {
-      var sourceField = form.querySelector('[name="LEADCF1"]');
+      var sourceField = form.querySelector('[name="source_page"]');
       if (!sourceField) return;
 
       sourceField.value = window.location.href;
@@ -347,30 +353,81 @@
 
     setSourcePage();
 
+    var inFlight = false;
+    var WEB3FORMS_ENDPOINT = 'https://api.web3forms.com/submit';
+    var accessKey = form.elements.access_key ? form.elements.access_key.value : '';
+    function snapshot() {
+      return Array.from(new FormData(form).entries()).filter(function (p) { return typeof p[1] === 'string'; });
+    }
+
+    function valuesFor(pairs, name) {
+      return pairs.filter(function (p) { return p[0] === name; }).map(function (p) { return p[1]; });
+    }
+
+    function toPayload(pairs) {
+      var payload = {};
+      pairs.forEach(function (p) {
+        if (p[1] === '') return;
+        payload[p[0]] = payload[p[0]] ? payload[p[0]] + ', ' + p[1] : p[1];
+      });
+      payload.access_key = accessKey;
+      return payload;
+    }
+
+    function trackLead(pairs) {
+      var tier = valuesFor(pairs, 'tier_interest')[0];
+      var services = valuesFor(pairs, 'services_needed');
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: 'generate_lead',
+        lead_service: tier ? tier : (services.length ? 'Custom mix' : 'Not specified'),
+        lead_services_selected: services.join(', '),
+        lead_language: valuesFor(pairs, 'website_language')[0] || '',
+        lead_preferred_contact: valuesFor(pairs, 'preferred_contact')[0] || ''
+      });
+    }
+
     form.addEventListener('submit', function (e) {
-      if (!form.reportValidity()) {
-        e.preventDefault();
+      e.preventDefault();
+      if (inFlight) return;
+      accessKey = form.elements.access_key ? form.elements.access_key.value.trim() : '';
+      if (form.elements.botcheck && form.elements.botcheck.checked) {
+        showFormError('Unable to send this message. Please reload the page and try again.');
+        return;
+      }
+      if (!form.reportValidity()) return;
+      if (!accessKey) {
+        showFormError('Sending is not available yet. Nothing has been sent. Please message us on WhatsApp or at hs@havensiam.com.');
         return;
       }
 
       setSourcePage();
-
       hideFormMessages();
+      inFlight = true;
       submitBtn.disabled = true;
       submitBtn.textContent = 'Sending...';
 
-      window.setTimeout(function () {
-        var tierChoice = form.querySelector('input[name="LEADCF5"]:checked');
-        var services = Array.prototype.map.call(form.querySelectorAll('input[name="LEADCF3"]:checked'), function (c) { return c.value; });
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({
-          event: 'generate_lead',
-          lead_service: tierChoice ? tierChoice.value : (services.length ? 'Custom mix' : 'Not specified'),
-          lead_services_selected: services.join(', '),
-          lead_language: form.querySelector('[name="LEADCF6"]').value,
-          lead_preferred_contact: form.querySelector('[name="LEADCF4"]').value
-        });
-        form.reset();
+      var pairs = snapshot();
+      var controller = window.AbortController ? new AbortController() : null;
+      var timer = window.setTimeout(function () { if (controller) controller.abort(); }, 15000);
+
+      fetch(WEB3FORMS_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(toPayload(pairs)),
+        credentials: 'omit',
+        signal: controller ? controller.signal : undefined
+      }).then(function (res) {
+        return res.json().then(function (result) { return { ok: res.ok, result: result }; });
+      }).then(function (r) {
+        // Success needs an OK HTTP response and the provider's strict boolean success flag.
+        if (!r.ok || !r.result || r.result.success !== true) throw new Error('unconfirmed delivery');
+        trackLead(pairs);
+        // Keep any edits made while the request was in flight.
+        if (JSON.stringify(snapshot()) === JSON.stringify(pairs)) {
+          form.reset();
+          setSourcePage();
+        }
         if (success) {
           success.style.display = 'block';
           success.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -380,7 +437,14 @@
           submitBtn.disabled = false;
           submitBtn.textContent = defaultButtonText;
         }, 1800);
-      }, 900);
+      }).catch(function () {
+        submitBtn.disabled = false;
+        submitBtn.textContent = defaultButtonText;
+        showFormError('We couldn\'t confirm that your message was received. Your details are still here — please try again, or message us on WhatsApp or at hs@havensiam.com.');
+      }).then(function () {
+        window.clearTimeout(timer);
+        inFlight = false;
+      });
     });
 
     var tierParam = new URLSearchParams(window.location.search).get('tier');
@@ -391,7 +455,7 @@
         '3': 'Tier 3 - Full concierge'
       };
       var tierValue = tierMap[tierParam];
-      var tierRadio = tierValue && form.querySelector('input[name="LEADCF5"][value="' + tierValue + '"]');
+      var tierRadio = tierValue && form.querySelector('input[name="tier_interest"][value="' + tierValue + '"]');
       if (tierRadio) {
         tierRadio.checked = true;
         window.setTimeout(function () {

@@ -14,6 +14,11 @@
   <title>Contact — Lancez votre projet en Thaïlande — Haven Siam</title>
   <meta name="description" content="Dites-nous où vous en êtes — choisissez une formule, combinez des services spécifiques, ou posez simplement une question. Nous répondrons sous un jour ouvré.">
   <link rel="canonical" href="https://havensiam.com/fr/contact">
+  <link rel="alternate" hreflang="en" href="https://havensiam.com/contact">
+  <link rel="alternate" hreflang="th" href="https://havensiam.com/th/contact">
+  <link rel="alternate" hreflang="fr" href="https://havensiam.com/fr/contact">
+  <link rel="alternate" hreflang="zh-Hant" href="https://havensiam.com/zh/contact">
+  <link rel="alternate" hreflang="x-default" href="https://havensiam.com/contact">
   <meta property="og:site_name" content="Haven Siam">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,7 +43,7 @@
       <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="navLinks">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
       </button>
-      <div class="lang-link-mobile"><a href="../contact">EN</a><span class="lang-divider-mobile">/</span><a href="../th/contact">ไทย</a></div>
+      <div class="lang-link-mobile"><a href="../contact">EN</a><span class="lang-divider-mobile">/</span><a href="../th/contact">ไทย</a><span class="lang-divider-mobile">/</span><a href="../zh/contact">中文</a></div>
       <div class="nav-group">
       <div class="nav-links" id="navLinks">
         <a href="./">Accueil</a>
@@ -46,6 +51,7 @@
           <a href="how-it-works" class="nav-dropdown-trigger">Comment ça marche</a>
           <div class="nav-dropdown-menu">
             <a href="register-company-thailand">Créer une société</a>
+            <a href="company-registration-rayong">Création de société à Rayong</a>
             <a href="relocate-to-thailand">Liste de contrôle</a>
             <a href="online-platform-business-thailand">Plateformes &amp; places de marché</a>
           </div>
@@ -59,6 +65,7 @@
         <div class="nav-dropdown-menu lang-menu" role="group" aria-label="Langue">
           <a href="../contact" lang="en" hreflang="en"><span>English</span><span class="lang-code" aria-hidden="true">EN</span></a>
           <a href="../th/contact" lang="th" hreflang="th"><span>ไทย</span><span class="lang-code" aria-hidden="true">TH</span></a>
+          <a href="../zh/contact" lang="zh-Hant" hreflang="zh-Hant"><span>繁體中文</span><span class="lang-code" aria-hidden="true">ZH</span></a>
         </div>
       </div>
       <div class="nav-socials">
@@ -104,38 +111,36 @@
         <p>Nous répondons en français, en anglais ou en thaï, par e-mail, WhatsApp ou LINE.</p>
       </div>
 
-      <iframe name="zohoLeadFrame" id="zohoLeadFrame" style="display:none;" title="Zoho lead submission"></iframe>
-      <form id="inquiryForm" class="inquiry-form" action="https://crm.zoho.com/crm/WebToLeadForm" method="POST" target="zohoLeadFrame" accept-charset="UTF-8">
-        <input type="hidden" name="xnQsjsdp" value="0bc8ee31ce42d8393ba66f0171964fbb360f219a79621213f7b695e019ef4136">
-        <input type="hidden" name="zc_gad" id="zc_gad" value="">
-        <input type="hidden" name="xmIwtLD" value="0f979852ec44bacbfc3cfba52238812da6ca5cedb3e3cf49ae9d027814277947927cad7875595f043b0c108a90fa04a2">
-        <input type="hidden" name="actionType" value="TGVhZHM=">
-        <input type="hidden" name="returnURL" value="null">
-        <input type="hidden" name="LEADCF6" value="French">
-        <input type="hidden" name="LEADCF1" value="">
-        <input type="text" name="aG9uZXlwb3Q" class="botcheck-field" tabindex="-1" autocomplete="off" value="">
+      <form id="inquiryForm" class="inquiry-form" action="https://api.web3forms.com/submit" method="POST" accept-charset="UTF-8">
+        <!-- Web3Forms access key for Haven Siam (public by design; delivery recipient is set in the Web3Forms account). -->
+        <input type="hidden" name="subject" value="Haven Siam website inquiry">
+        <input type="hidden" name="from_name" value="Haven Siam website">
+        <input type="hidden" name="access_key" value="f5efa26a-0f75-4a95-bc88-8da7dddb3e95">
+        <div hidden><input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-label="Leave unchecked"></div>
+        <input type="hidden" name="website_language" value="French">
+        <input type="hidden" name="source_page" value="">
         <div id="formSuccess" class="form-success" role="status" aria-live="polite">Merci — votre demande a bien été envoyée. Nous examinerons les détails et vous répondrons sous un jour ouvré.</div>
         <div id="formError" class="form-error" role="alert" aria-live="assertive"></div>
 
         <div class="form-row">
           <div class="form-field">
             <label for="name">Nom</label>
-            <input type="text" id="name" name="Last Name" required>
+            <input type="text" id="name" name="name" required>
           </div>
           <div class="form-field">
             <label for="email">E-mail</label>
-            <input type="email" id="email" name="Email" required>
+            <input type="email" id="email" name="email" required>
           </div>
         </div>
 
         <div class="form-row">
           <div class="form-field">
             <label for="contact_handle">Téléphone, WhatsApp ou LINE (facultatif)</label>
-            <input type="text" id="contact_handle" name="Phone">
+            <input type="text" id="contact_handle" name="phone">
           </div>
           <div class="form-field">
             <label for="preferred_contact">Moyen de contact préféré</label>
-            <select id="preferred_contact" name="LEADCF4">
+            <select id="preferred_contact" name="preferred_contact">
               <option value="Email">E-mail</option>
               <option value="WhatsApp">WhatsApp</option>
               <option value="LINE">LINE</option>
@@ -149,28 +154,28 @@
           <p class="form-hint">Pas encore sûr ? Laissez ce champ vide et dites-le-nous dans le message ci-dessous.</p>
           <div class="radio-grid">
             <label class="radio-option">
-              <input type="radio" name="LEADCF5" value="Tier 1 - Digital foundation">
+              <input type="radio" name="tier_interest" value="Tier 1 - Digital foundation">
               <span>
                 <strong>Formule 1 — Fondation numérique</strong>
-                <small>Site web, nom de domaine, hébergement, e-mail professionnel, CRM, SEO et analytics.</small>
+                <small>Site web, nom de domaine, hébergement, e-mail professionnel, CRM, SEO, visibilité dans la recherche IA et analytics.</small>
               </span>
             </label>
             <label class="radio-option">
-              <input type="radio" name="LEADCF5" value="Tier 2 - Business launch">
+              <input type="radio" name="tier_interest" value="Tier 2 - Business launch">
               <span>
                 <strong>Formule 2 — Lancement d'entreprise</strong>
                 <small>Formule 1 plus création d'entreprise, BOI, visa et permis de travail avec des partenaires thaïlandais.</small>
               </span>
             </label>
             <label class="radio-option">
-              <input type="radio" name="LEADCF5" value="Tier 3 - Full concierge">
+              <input type="radio" name="tier_interest" value="Tier 3 - Full concierge">
               <span>
                 <strong>Formule 3 — Accompagnement complet</strong>
                 <small>Formule 2 plus comptabilité, déclarations fiscales et contenu multilingue.</small>
               </span>
             </label>
             <label class="radio-option">
-              <input type="radio" name="LEADCF5" value="Not sure yet">
+              <input type="radio" name="tier_interest" value="Not sure yet">
               <span>Pas encore sûr</span>
             </label>
           </div>
@@ -179,25 +184,25 @@
         <fieldset class="form-fieldset">
           <legend>Ou, services spécifiques dont vous avez besoin (cochez-en autant que vous voulez)</legend>
           <div class="checkbox-grid">
-            <label class="checkbox-option"><input type="checkbox" name="LEADCF3" value="Website design"><span>Conception de site web</span></label>
-            <label class="checkbox-option"><input type="checkbox" name="LEADCF3" value="Domain registration"><span>Enregistrement de domaine</span></label>
-            <label class="checkbox-option"><input type="checkbox" name="LEADCF3" value="Web hosting"><span>Hébergement web</span></label>
-            <label class="checkbox-option"><input type="checkbox" name="LEADCF3" value="Email hosting"><span>Hébergement e-mail</span></label>
-            <label class="checkbox-option"><input type="checkbox" name="LEADCF3" value="CRM integration"><span>Intégration CRM</span></label>
-            <label class="checkbox-option"><input type="checkbox" name="LEADCF3" value="SEO &amp; Analytics"><span>SEO et analytics</span></label>
-            <label class="checkbox-option"><input type="checkbox" name="LEADCF3" value="Company registration"><span>Enregistrement de société</span></label>
-            <label class="checkbox-option"><input type="checkbox" name="LEADCF3" value="BOI application"><span>Demande BOI</span></label>
-            <label class="checkbox-option"><input type="checkbox" name="LEADCF3" value="Visa application"><span>Demande de visa</span></label>
-            <label class="checkbox-option"><input type="checkbox" name="LEADCF3" value="Work permit"><span>Permis de travail</span></label>
-            <label class="checkbox-option"><input type="checkbox" name="LEADCF3" value="Accounting / bookkeeping"><span>Comptabilité / tenue de livres</span></label>
-            <label class="checkbox-option"><input type="checkbox" name="LEADCF3" value="Translation / content"><span>Traduction / contenu</span></label>
+            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Website design"><span>Conception de site web</span></label>
+            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Domain registration"><span>Enregistrement de domaine</span></label>
+            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Web hosting"><span>Hébergement web</span></label>
+            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Email hosting"><span>Hébergement e-mail</span></label>
+            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="CRM integration"><span>Intégration CRM</span></label>
+            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="SEO &amp; Analytics"><span>SEO, visibilité dans la recherche IA et analytics</span></label>
+            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Company registration"><span>Enregistrement de société</span></label>
+            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="BOI application"><span>Demande BOI</span></label>
+            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Visa application"><span>Demande de visa</span></label>
+            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Work permit"><span>Permis de travail</span></label>
+            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Accounting / bookkeeping"><span>Comptabilité / tenue de livres</span></label>
+            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Translation / content"><span>Traduction / contenu</span></label>
           </div>
         </fieldset>
 
         <div class="form-field">
           <label for="message">Autre chose que nous devrions savoir ?</label>
           <p class="form-hint">Pour une création de société, il est utile d'indiquer : votre nationalité, ce que fera l'entreprise, qui en sera propriétaire, si vous avez des locaux, combien de collaborateurs étrangers ont besoin d'un visa, et votre calendrier.</p>
-          <textarea id="message" name="LEADCF7" rows="5" placeholder="Parlez-nous de votre situation, de votre calendrier, ou de toute question."></textarea>
+          <textarea id="message" name="message" rows="5" placeholder="Parlez-nous de votre situation, de votre calendrier, ou de toute question."></textarea>
         </div>
 
         <button type="submit" class="btn btn-coral form-submit" id="submitBtn">Envoyer</button>
@@ -236,6 +241,7 @@
         <a href="pricing">Tarifs</a>
         <a href="about">À propos</a>
         <a href="register-company-thailand">Créer une société</a>
+        <a href="company-registration-rayong">Création de société à Rayong</a>
         <a href="relocate-to-thailand">Liste de contrôle</a>
         <a href="online-platform-business-thailand">Plateformes &amp; places de marché</a>
       </div>
@@ -338,7 +344,7 @@
     }
 
     function setSourcePage() {
-      var sourceField = form.querySelector('[name="LEADCF1"]');
+      var sourceField = form.querySelector('[name="source_page"]');
       if (!sourceField) return;
 
       sourceField.value = window.location.href;
@@ -347,30 +353,81 @@
 
     setSourcePage();
 
+    var inFlight = false;
+    var WEB3FORMS_ENDPOINT = 'https://api.web3forms.com/submit';
+    var accessKey = form.elements.access_key ? form.elements.access_key.value : '';
+    function snapshot() {
+      return Array.from(new FormData(form).entries()).filter(function (p) { return typeof p[1] === 'string'; });
+    }
+
+    function valuesFor(pairs, name) {
+      return pairs.filter(function (p) { return p[0] === name; }).map(function (p) { return p[1]; });
+    }
+
+    function toPayload(pairs) {
+      var payload = {};
+      pairs.forEach(function (p) {
+        if (p[1] === '') return;
+        payload[p[0]] = payload[p[0]] ? payload[p[0]] + ', ' + p[1] : p[1];
+      });
+      payload.access_key = accessKey;
+      return payload;
+    }
+
+    function trackLead(pairs) {
+      var tier = valuesFor(pairs, 'tier_interest')[0];
+      var services = valuesFor(pairs, 'services_needed');
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({
+        event: 'generate_lead',
+        lead_service: tier ? tier : (services.length ? 'Custom mix' : 'Not specified'),
+        lead_services_selected: services.join(', '),
+        lead_language: valuesFor(pairs, 'website_language')[0] || '',
+        lead_preferred_contact: valuesFor(pairs, 'preferred_contact')[0] || ''
+      });
+    }
+
     form.addEventListener('submit', function (e) {
-      if (!form.reportValidity()) {
-        e.preventDefault();
+      e.preventDefault();
+      if (inFlight) return;
+      accessKey = form.elements.access_key ? form.elements.access_key.value.trim() : '';
+      if (form.elements.botcheck && form.elements.botcheck.checked) {
+        showFormError('Envoi impossible. Veuillez recharger la page et réessayer.');
+        return;
+      }
+      if (!form.reportValidity()) return;
+      if (!accessKey) {
+        showFormError('L\'envoi n\'est pas encore disponible. Rien n\'a été envoyé. Écrivez-nous sur WhatsApp ou à hs@havensiam.com.');
         return;
       }
 
       setSourcePage();
-
       hideFormMessages();
+      inFlight = true;
       submitBtn.disabled = true;
       submitBtn.textContent = 'Envoi en cours...';
 
-      window.setTimeout(function () {
-        var tierChoice = form.querySelector('input[name="LEADCF5"]:checked');
-        var services = Array.prototype.map.call(form.querySelectorAll('input[name="LEADCF3"]:checked'), function (c) { return c.value; });
-        window.dataLayer = window.dataLayer || [];
-        window.dataLayer.push({
-          event: 'generate_lead',
-          lead_service: tierChoice ? tierChoice.value : (services.length ? 'Custom mix' : 'Not specified'),
-          lead_services_selected: services.join(', '),
-          lead_language: form.querySelector('[name="LEADCF6"]').value,
-          lead_preferred_contact: form.querySelector('[name="LEADCF4"]').value
-        });
-        form.reset();
+      var pairs = snapshot();
+      var controller = window.AbortController ? new AbortController() : null;
+      var timer = window.setTimeout(function () { if (controller) controller.abort(); }, 15000);
+
+      fetch(WEB3FORMS_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(toPayload(pairs)),
+        credentials: 'omit',
+        signal: controller ? controller.signal : undefined
+      }).then(function (res) {
+        return res.json().then(function (result) { return { ok: res.ok, result: result }; });
+      }).then(function (r) {
+        // Success needs an OK HTTP response and the provider's strict boolean success flag.
+        if (!r.ok || !r.result || r.result.success !== true) throw new Error('unconfirmed delivery');
+        trackLead(pairs);
+        // Keep any edits made while the request was in flight.
+        if (JSON.stringify(snapshot()) === JSON.stringify(pairs)) {
+          form.reset();
+          setSourcePage();
+        }
         if (success) {
           success.style.display = 'block';
           success.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -380,7 +437,14 @@
           submitBtn.disabled = false;
           submitBtn.textContent = defaultButtonText;
         }, 1800);
-      }, 900);
+      }).catch(function () {
+        submitBtn.disabled = false;
+        submitBtn.textContent = defaultButtonText;
+        showFormError('Nous n\'avons pas pu confirmer la réception de votre message. Vos informations sont conservées — veuillez réessayer, ou nous écrire sur WhatsApp ou à hs@havensiam.com.');
+      }).then(function () {
+        window.clearTimeout(timer);
+        inFlight = false;
+      });
     });
 
     var tierParam = new URLSearchParams(window.location.search).get('tier');
@@ -391,7 +455,7 @@
         '3': 'Tier 3 - Full concierge'
       };
       var tierValue = tierMap[tierParam];
-      var tierRadio = tierValue && form.querySelector('input[name="LEADCF5"][value="' + tierValue + '"]');
+      var tierRadio = tierValue && form.querySelector('input[name="tier_interest"][value="' + tierValue + '"]');
       if (tierRadio) {
         tierRadio.checked = true;
         window.setTimeout(function () {
