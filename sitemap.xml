@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://havensiam.com/</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-11-05</lastmod>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/"/>
     <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/"/>
@@ -22,7 +22,7 @@
   </url>
   <url>
     <loc>https://havensiam.com/services</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/services"/>
     <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/services"/>
@@ -31,8 +31,13 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://havensiam.com/services"/>
   </url>
   <url>
+    <loc>https://havensiam.com/website-seo-services-rayong</loc>
+    <lastmod>2026-11-05</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://havensiam.com/pricing</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/pricing"/>
     <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/pricing"/>
@@ -52,7 +57,7 @@
   </url>
   <url>
     <loc>https://havensiam.com/contact</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/contact"/>
     <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/contact"/>
@@ -62,7 +67,7 @@
   </url>
   <url>
     <loc>https://havensiam.com/online-platform-business-thailand</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/online-platform-business-thailand"/>
     <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/online-platform-business-thailand"/>
@@ -72,7 +77,7 @@
   </url>
   <url>
     <loc>https://havensiam.com/register-company-thailand</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/register-company-thailand"/>
     <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/register-company-thailand"/>
@@ -112,7 +117,7 @@
   </url>
   <url>
     <loc>https://havensiam.com/relocate-to-thailand</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/relocate-to-thailand"/>
     <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/relocate-to-thailand"/>
@@ -149,7 +154,7 @@
   </url>
   <url>
     <loc>https://havensiam.com/th/</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/"/>
     <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/"/>
@@ -169,7 +174,7 @@
   </url>
   <url>
     <loc>https://havensiam.com/th/services</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/services"/>
     <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/services"/>
@@ -179,7 +184,7 @@
   </url>
   <url>
     <loc>https://havensiam.com/th/pricing</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/pricing"/>
     <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/pricing"/>
@@ -199,7 +204,7 @@
   </url>
   <url>
     <loc>https://havensiam.com/th/contact</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/contact"/>
     <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/contact"/>
@@ -209,7 +214,7 @@
   </url>
   <url>
     <loc>https://havensiam.com/th/register-company-thailand</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/register-company-thailand"/>
     <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/register-company-thailand"/>
@@ -249,7 +254,7 @@
   </url>
   <url>
     <loc>https://havensiam.com/th/online-platform-business-thailand</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/online-platform-business-thailand"/>
     <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/online-platform-business-thailand"/>
@@ -259,7 +264,7 @@
   </url>
   <url>
     <loc>https://havensiam.com/th/relocate-to-thailand</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/relocate-to-thailand"/>
     <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/relocate-to-thailand"/>
@@ -296,7 +301,7 @@
   </url>
   <url>
     <loc>https://havensiam.com/fr/</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/"/>
     <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/"/>
@@ -316,7 +321,7 @@
   </url>
   <url>
     <loc>https://havensiam.com/fr/services</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/services"/>
     <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/services"/>
@@ -326,7 +331,7 @@
   </url>
   <url>
     <loc>https://havensiam.com/fr/pricing</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/pricing"/>
     <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/pricing"/>
@@ -346,7 +351,7 @@
   </url>
   <url>
     <loc>https://havensiam.com/fr/contact</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/contact"/>
     <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/contact"/>
@@ -356,7 +361,7 @@
   </url>
   <url>
     <loc>https://havensiam.com/fr/register-company-thailand</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/register-company-thailand"/>
     <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/register-company-thailand"/>
@@ -396,7 +401,7 @@
   </url>
   <url>
     <loc>https://havensiam.com/fr/online-platform-business-thailand</loc>
-    <lastmod>2026-10-01</lastmod>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/online-platform-business-thailand"/>
     <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/online-platform-business-thailand"/>
@@ -406,7 +411,7 @@
   </url>
   <url>
     <loc>https://havensiam.com/fr/relocate-to-thailand</loc>
-    <lastmod>2026-09-25</lastmod>
+    <lastmod>2026-11-05</lastmod>
     <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://havensiam.com/relocate-to-thailand"/>
     <xhtml:link rel="alternate" hreflang="th" href="https://havensiam.com/th/relocate-to-thailand"/>
