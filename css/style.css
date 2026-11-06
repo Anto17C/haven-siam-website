@@ -67,8 +67,8 @@ body.lang-ru {
 }
 
 body.lang-zh {
-  --font-display: 'Noto Sans TC', var(--font-body);
-  font-family: 'Noto Sans TC', var(--font-body);
+  --font-display: 'Noto Sans SC', var(--font-body);
+  font-family: 'Noto Sans SC', var(--font-body);
 }
 
 body.lang-zh h1,
@@ -82,7 +82,7 @@ body.lang-zh .pillar-heading,
 body.lang-zh .checklist-content h3,
 body.lang-zh .step-number,
 body.lang-zh .cta-band h2 {
-  font-family: 'Noto Sans TC', var(--font-body);
+  font-family: 'Noto Sans SC', var(--font-body);
 }
 
 a {
