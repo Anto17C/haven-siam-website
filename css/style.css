@@ -622,6 +622,21 @@ img {
   margin-bottom: 12px;
 }
 
+/* Homepage hero (plain .hero; interior pages use .page-hero): wider title and paragraph so the
+   English title sets in 3 lines, and a shorter hero to match the line it no longer needs. */
+@media (min-width: 861px) {
+  .hero:not(.page-hero) {
+    height: 560px;
+  }
+  .hero:not(.page-hero) .hero-copy,
+  .hero:not(.page-hero) .hero-copy h1 {
+    max-width: 680px;
+  }
+  .hero:not(.page-hero) .hero-copy .subhead {
+    max-width: 600px;
+  }
+}
+
 .hero-copy .supporting {
   font-size: 13.5px;
   color: rgba(225, 245, 238, 0.75);
