@@ -33,6 +33,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 84px;
   overflow-x: hidden;
 }
 
@@ -42,7 +43,8 @@ body {
   line-height: 1.5;
   background: var(--white);
   -webkit-font-smoothing: antialiased;
-  overflow-x: hidden;
+  /* clip, not hidden: hidden makes <body> a scroll container, which disables the sticky header */
+  overflow-x: clip;
 }
 
 body.lang-th {
@@ -103,7 +105,10 @@ img {
 
 /* ---------- Navbar ---------- */
 .navbar {
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: var(--white);
   padding: 0 2rem;
   box-sizing: border-box;
   border-bottom: 0.5px solid var(--border-light);
@@ -1225,6 +1230,10 @@ img {
     box-shadow: 0 12px 24px rgba(4, 52, 44, 0.08);
     padding: 1rem 2rem 1.25rem;
     z-index: 20;
+    max-height: calc(100vh - 76px);
+    max-height: calc(100dvh - 76px);
+    overflow-y: auto;
+    overscroll-behavior: contain;
   }
   .nav-links.open { display: flex; }
   .nav-links a { padding: 10px 0; }
