@@ -52,7 +52,8 @@
         <a href="./">หน้าแรก</a>
         <div class="nav-item nav-dropdown">
           <a href="how-it-works" class="nav-dropdown-trigger">วิธีการทำงาน</a>
-          <div class="nav-dropdown-menu">
+          <button class="nav-sub-toggle" type="button" aria-expanded="false" aria-controls="nav-sub-menu"><span class="visually-hidden">แสดงเมนูย่อย</span><svg viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2 4.5l4 4 4-4"/></svg></button>
+          <div class="nav-dropdown-menu" id="nav-sub-menu">
             <a href="register-company-thailand" aria-current="page">จดทะเบียนบริษัท</a>
             <a href="company-registration-rayong">จดทะเบียนบริษัทในระยอง</a>
             <a href="relocate-to-thailand">เช็กลิสต์ย้ายมาไทย</a>
@@ -292,5 +293,6 @@
   </script>
   <script src="../js/contact-tracking.js" defer></script>
   <script src="../js/lang-switch.js" defer></script>
+  <script src="../js/mobile-nav.js" defer></script>
 </body>
 </html>

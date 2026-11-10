@@ -50,7 +50,8 @@
         <a href="./">Home</a>
         <div class="nav-item nav-dropdown">
           <a href="how-it-works" class="nav-dropdown-trigger">How it works</a>
-          <div class="nav-dropdown-menu">
+          <button class="nav-sub-toggle" type="button" aria-expanded="false" aria-controls="nav-sub-menu"><span class="visually-hidden">Show submenu</span><svg viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M2 4.5l4 4 4-4"/></svg></button>
+          <div class="nav-dropdown-menu" id="nav-sub-menu">
             <a href="register-company-thailand">Register a company</a>
             <a href="company-registration-rayong">Company registration in Rayong</a>
             <a href="relocate-to-thailand">Relocation checklist</a>
@@ -235,5 +236,6 @@
   </script>
   <script src="js/contact-tracking.js" defer></script>
   <script src="js/lang-switch.js" defer></script>
+  <script src="js/mobile-nav.js" defer></script>
 </body>
 </html>
