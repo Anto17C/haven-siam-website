@@ -1089,7 +1089,6 @@ img {
   font-size: 12.8px;
   color: var(--teal-100);
   line-height: 1.6;
-  max-width: 260px;
 }
 
 .footer-col h4 {
@@ -1112,7 +1111,6 @@ img {
 }
 
 .footer-address {
-  max-width: 230px;
   margin-bottom: 14px;
   color: rgba(225, 245, 238, 0.82);
 }
