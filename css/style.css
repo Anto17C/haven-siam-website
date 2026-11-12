@@ -1426,9 +1426,6 @@ img {
     order: 3;
     margin-left: auto;
   }
-  .nav-cta {
-    display: none;
-  }
   .lang-link-mobile {
     display: none;
   }
@@ -1447,21 +1444,40 @@ img {
   }
 }
 
-/* Phone menu: Get Started button at the end of the panel, as wide as the longest menu title */
-@media (max-width: 600px), (max-width: 960px) and (orientation: landscape) and (max-height: 500px) {
+/* Portrait phone: Get Started button at the end of the menu panel, same padding as the hero button */
+@media (max-width: 600px) {
+  .nav-cta {
+    display: none;
+  }
   .navbar .nav-links > a.nav-cta-mobile {
     display: block;
     box-sizing: border-box;
-    width: var(--cta-w, auto);
-    min-width: max-content;
+    width: fit-content;
     margin-top: 0.75rem;
-    padding: 11px 4px;
+    padding: 11px 24px;
     text-align: center;
     color: var(--white);
   }
   .navbar .nav-links > a.nav-cta-mobile:hover,
   .navbar .nav-links > a.nav-cta-mobile:focus-visible {
     color: var(--white);
+  }
+}
+
+/* Landscape phone: Get Started sits in the header, just before the hamburger */
+@media (min-width: 601px) and (max-width: 960px) and (orientation: landscape) and (max-height: 500px) {
+  .nav-cta {
+    display: inline-block;
+    order: 4;
+    margin-left: 10px;
+    margin-right: 0;
+    padding: 9px 16px;
+  }
+  .nav-socials {
+    order: 2;
+  }
+  .lang-switch {
+    order: 3;
   }
 }
 
