@@ -11,6 +11,8 @@
   --coral-300: #F0997B;
   --coral-100: #FAECE7;
 
+  --gold: #BC955B;
+  --gold-on-dark: #CFA559;
   --cream: #F7F5EE;
   --white: #FFFFFF;
   --ink: #04342C;
@@ -158,6 +160,26 @@ img {
 
 .nav-links a:hover {
   color: var(--coral-600);
+}
+
+/* Current page: thin gold underline in the header nav, as on Baanward (a submenu page underlines its parent, How It Works) */
+.navbar .nav-links > a[aria-current="page"],
+.navbar .nav-links > .nav-dropdown > .nav-dropdown-trigger[aria-current="page"],
+.navbar .nav-links > .nav-dropdown:has(.nav-dropdown-menu a[aria-current="page"]) > .nav-dropdown-trigger {
+  text-decoration: underline;
+  text-decoration-color: var(--gold);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 10px;
+  text-decoration-skip-ink: none;
+}
+
+/* Same underline on the teal phone menu, in the lighter gold */
+@media (max-width: 600px), (max-width: 960px) and (orientation: landscape) and (max-height: 500px) {
+  .navbar .nav-links > a[aria-current="page"],
+  .navbar .nav-links > .nav-dropdown > .nav-dropdown-trigger[aria-current="page"],
+  .navbar .nav-links > .nav-dropdown:has(.nav-dropdown-menu a[aria-current="page"]) > .nav-dropdown-trigger {
+    text-decoration-color: var(--gold-on-dark);
+  }
 }
 
 .nav-item {
