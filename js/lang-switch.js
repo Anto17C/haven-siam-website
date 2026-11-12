@@ -9,7 +9,7 @@
 
   var hover = false;
   var dismissed = false;
-  var small = window.matchMedia ? window.matchMedia('(max-width: 600px)') : { matches: false };
+  var small = window.matchMedia ? window.matchMedia('(max-width: 600px), (max-width: 960px) and (orientation: landscape) and (max-height: 500px)') : { matches: false };
 
   function isOpen() {
     if (box.classList.contains('open')) return true;

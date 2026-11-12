@@ -40,7 +40,7 @@
     if (button) button.focus();
   });
 
-  var phone = window.matchMedia ? window.matchMedia('(max-width: 600px)') : null;
+  var phone = window.matchMedia ? window.matchMedia('(max-width: 600px), (max-width: 960px) and (orientation: landscape) and (max-height: 500px)') : null;
   if (phone) {
     var reset = function () { closeAll(); };
     if (phone.addEventListener) phone.addEventListener('change', reset); else if (phone.addListener) phone.addListener(reset);
