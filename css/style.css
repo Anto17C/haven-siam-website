@@ -827,6 +827,10 @@ img {
   max-width: 480px;
 }
 
+#how-it-works h2 {
+  max-width: none;
+}
+
 .dark-section-inner {
   display: flex;
   align-items: center;
