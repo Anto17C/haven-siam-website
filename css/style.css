@@ -220,6 +220,10 @@ img {
   display: none;
 }
 
+.navbar .nav-links > .nav-cta-mobile {
+  display: none;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -1440,6 +1444,24 @@ img {
 @media (max-width: 600px) {
   .nav-socials {
     gap: 10px;
+  }
+}
+
+/* Phone menu: Get Started button at the end of the panel, as wide as the longest menu title */
+@media (max-width: 600px), (max-width: 960px) and (orientation: landscape) and (max-height: 500px) {
+  .navbar .nav-links > a.nav-cta-mobile {
+    display: block;
+    box-sizing: border-box;
+    width: var(--cta-w, auto);
+    min-width: max-content;
+    margin-top: 0.75rem;
+    padding: 11px 4px;
+    text-align: center;
+    color: var(--white);
+  }
+  .navbar .nav-links > a.nav-cta-mobile:hover,
+  .navbar .nav-links > a.nav-cta-mobile:focus-visible {
+    color: var(--white);
   }
 }
 

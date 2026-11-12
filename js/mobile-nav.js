@@ -24,10 +24,25 @@
     });
   });
 
+  // Size the Get Started button to the longest top-level menu title (text width, not the full-width row).
+  var cta = links.querySelector('.nav-cta-mobile');
+  function sizeCta() {
+    if (!cta || !links.classList.contains('open')) return;
+    var widest = 0;
+    Array.prototype.forEach.call(links.querySelectorAll(':scope > a:not(.nav-cta-mobile), .nav-dropdown-trigger'), function (a) {
+      var range = document.createRange();
+      range.selectNodeContents(a);
+      widest = Math.max(widest, range.getBoundingClientRect().width);
+    });
+    if (widest) links.style.setProperty('--cta-w', Math.ceil(widest) + 'px');
+  }
+  window.addEventListener('resize', sizeCta);
+
   // The hamburger toggles the "open" class on the menu; reset the submenus whenever it closes.
   if (window.MutationObserver) {
     new MutationObserver(function () {
       if (!links.classList.contains('open')) closeAll();
+      sizeCta();
     }).observe(links, { attributes: true, attributeFilter: ['class'] });
   }
 
