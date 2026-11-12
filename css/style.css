@@ -1435,6 +1435,14 @@ img {
   }
 }
 
+/* Phone header: contact icons 20px (trial) */
+@media (max-width: 600px) {
+  .nav-socials .icon-link img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
 @media (max-width: 360px) {
   .lang-switch .lang-toggle {
     padding: 0 8px;
