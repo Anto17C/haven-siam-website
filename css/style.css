@@ -1468,6 +1468,61 @@ img {
   }
 }
 
+/* Landscape phone menu: 14px titles, 13px submenu items (portrait unchanged) */
+@media (min-width: 601px) and (max-width: 960px) and (orientation: landscape) and (max-height: 500px) {
+  .navbar .nav-links > a,
+  .navbar .nav-links .nav-dropdown-trigger {
+    font-size: 14px;
+  }
+  .navbar .nav-links .nav-dropdown-menu a {
+    font-size: 13px;
+  }
+}
+
+/* Landscape phone menu: titles run in a horizontal row, one 28px gap between every title */
+@media (min-width: 601px) and (max-width: 960px) and (orientation: landscape) and (max-height: 500px) {
+  .nav-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    column-gap: 28px;
+    row-gap: 0;
+    padding: 0.5rem 2rem 0.75rem;
+  }
+  .nav-links > a,
+  .nav-links .nav-dropdown-trigger {
+    padding: 12px 0;
+    white-space: nowrap;
+  }
+  .nav-item {
+    display: contents;
+  }
+  /* chevron hugs its title (8px) and the next title sits 28px after the chevron */
+  .nav-sub-toggle {
+    min-width: 0;
+    min-height: 44px;
+    padding: 0 6px;
+    justify-items: center;
+    margin-left: -26px;
+    margin-right: -6px;
+  }
+  /* the open submenu is its own row under the titles, items side by side */
+  .nav-dropdown.submenu-open .nav-dropdown-menu {
+    display: flex;
+    flex-wrap: wrap;
+    order: 10;
+    flex-basis: 100%;
+    column-gap: 28px;
+    margin: 0 0 4px;
+    padding: 0 0 0 14px;
+  }
+  .nav-dropdown-menu a {
+    padding: 8px 0;
+    white-space: nowrap;
+  }
+}
+
 /* Landscape phone: Get Started sits in the header, just before the hamburger */
 @media (min-width: 601px) and (max-width: 960px) and (orientation: landscape) and (max-height: 500px) {
   .nav-cta {
