@@ -1012,10 +1012,6 @@ img {
   margin: 16px 0 2px;
 }
 
-.tier-price-monthly {
-  margin-top: 0;
-}
-
 .tier-price-thb {
   display: block;
   font-family: var(--font-body);
