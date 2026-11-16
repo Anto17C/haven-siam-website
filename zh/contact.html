@@ -13,7 +13,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>联系 Haven Siam — 开始设立您的泰国业务</title>
-  <meta name="description" content="告诉我们您目前进行到哪一步——选择方案、组合特定服务，或只是提问。我们会在一个工作日内回复。">
+  <meta name="description" content="告诉我们您目前的进度——选择网站方案、加购内容支持、申请合作伙伴服务，或只是提个问题。我们会在一个工作日内回复。">
   <link rel="canonical" href="https://havensiam.com/zh/contact">
   <link rel="alternate" hreflang="en" href="https://havensiam.com/contact">
   <link rel="alternate" hreflang="th" href="https://havensiam.com/th/contact">
@@ -124,6 +124,7 @@
         <div hidden><input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-label="Leave unchecked"></div>
         <input type="hidden" name="website_language" value="Chinese">
         <input type="hidden" name="source_page" value="">
+        <input type="hidden" name="inquiry_intent" value="">
         <div id="formSuccess" class="form-success" role="status" aria-live="polite">谢谢您——您的咨询已发送。我们会查看内容，并于一个工作日内回复您。</div>
         <div id="formError" class="form-error" role="alert" aria-live="assertive"></div>
 
@@ -153,53 +154,60 @@
           </div>
         </div>
 
-        <fieldset class="form-fieldset">
-          <legend>您对哪个方案有兴趣？</legend>
-          <p class="form-hint">还不确定？请留空，并在下方留言告诉我们。</p>
+        <fieldset class="form-fieldset" id="package-group">
+          <legend>您对哪个网站方案感兴趣？</legend>
+          <p class="form-hint">选填。还不确定？请留空，并在下方留言中告诉我们。</p>
           <div class="radio-grid">
             <label class="radio-option">
-              <input type="radio" name="tier_interest" value="Tier 1 - Digital foundation">
+              <input type="radio" name="package_interest" value="Launch">
               <span>
-                <strong>方案一 — 数字基础</strong>
-                <small>网站设计、域名注册、主机托管、商务电子邮件、CRM、SEO、AI 搜索可见度与数据分析设置。</small>
+                <strong>Launch</strong>
+                <small>最多 5 个页面，1–2 种语言，专业上线。</small>
               </span>
             </label>
             <label class="radio-option">
-              <input type="radio" name="tier_interest" value="Tier 2 - Business launch">
+              <input type="radio" name="package_interest" value="Growth">
               <span>
-                <strong>方案二 — 业务启动</strong>
-                <small>方案一，加上公司注册、BOI、签证与工作许可，与泰国合作伙伴协调。</small>
+                <strong>Growth</strong>
+                <small>最多 12 个页面，最多 4 种语言，含搜索规划与咨询追踪。</small>
               </span>
             </label>
             <label class="radio-option">
-              <input type="radio" name="tier_interest" value="Tier 3 - Full concierge">
+              <input type="radio" name="package_interest" value="Managed">
               <span>
-                <strong>方案三 — 全方位管家服务</strong>
-                <small>方案二，加上记账、报税协调与多语言内容支持。</small>
+                <strong>Managed</strong>
+                <small>Growth 的全部能力，另含上线内容与 Haven Siam 的月度方案。</small>
               </span>
             </label>
             <label class="radio-option">
-              <input type="radio" name="tier_interest" value="Not sure yet">
+              <input type="radio" name="package_interest" value="Not sure yet">
               <span>还不确定</span>
             </label>
           </div>
         </fieldset>
 
-        <fieldset class="form-fieldset">
-          <legend>或是勾选您需要的特定服务（可复选）</legend>
+        <fieldset class="form-fieldset" id="services-group">
+          <legend>我们能帮您什么？（可多选）</legend>
+          <p class="form-hint">可任意选择——网站方案、内容支持、合作伙伴服务，或组合。</p>
+          <p class="form-group-label">由 Haven Siam 提供</p>
           <div class="checkbox-grid">
-            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Website design"><span>网站设计</span></label>
-            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Domain registration"><span>域名注册</span></label>
-            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Web hosting"><span>网站主机托管</span></label>
-            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Email hosting"><span>电子邮件托管</span></label>
-            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="CRM integration"><span>CRM 整合</span></label>
-            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="SEO &amp; Analytics"><span>SEO、AI 搜索可见度与数据分析</span></label>
+            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Website design and build"><span>网站设计与搭建</span></label>
+            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Domain, hosting and business email"><span>域名、主机与商务邮箱</span></label>
+            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Search and analytics setup"><span>搜索与分析设置</span></label>
+            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Content add-on (one-time)"><span>内容附加服务（一次性）：撰写、优化或本地化上线文案</span></label>
+            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Ongoing content support (monthly)"><span>持续内容支持（每月）</span></label>
+            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="CRM integration"><span>CRM 集成（另行报价）</span></label>
+          </div>
+          <div id="partner-group">
+            <p class="form-group-label">与持牌合作伙伴协调</p>
+            <div class="checkbox-grid">
             <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Company registration"><span>公司注册</span></label>
             <label class="checkbox-option"><input type="checkbox" name="services_needed" value="BOI application"><span>BOI 申请</span></label>
             <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Visa application"><span>签证申请</span></label>
             <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Work permit"><span>工作许可</span></label>
-            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Accounting / bookkeeping"><span>会计／记账</span></label>
-            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Translation / content"><span>翻译／内容</span></label>
+            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Accounting / bookkeeping"><span>会计 / 记账</span></label>
+            </div>
+            <p class="form-hint">合作伙伴咨询会先到 Haven Siam，我们会厘清范围并引荐合适的合作伙伴。</p>
           </div>
         </fieldset>
 
@@ -236,7 +244,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="logo footer-logo"><img src="../assets/logo-assets/logo.svg" alt="Haven Siam" width="430" height="96" loading="lazy"></div>
-        <p>为将自己或业务迁往泰国的创业者打造的协调中心——网站、域名、公司注册与 BOI、签证与会计，一站完成。</p>
+        <p>为泰国企业打造的网站与内容，由 Haven Siam 直接交付——并协调持牌合作伙伴办理公司注册、BOI、签证与会计。</p>
       </div>
       <div class="footer-col">
         <h4>探索</h4>
@@ -253,10 +261,9 @@
       <div class="footer-col">
         <h4>服务项目</h4>
         <a href="services#digital">数字基础</a>
-        <a href="services#formation">业务设立</a>
-        <a href="services#financial">会计</a>
         <a href="services#content">内容与本地化</a>
         <a href="website-seo-services-rayong">网站与 SEO 服务</a>
+        <a href="pricing#partners">合作伙伴服务</a>
       </div>
       <div class="footer-col">
         <h4>联系我们</h4>
@@ -378,12 +385,25 @@
     }
 
     function trackLead(pairs) {
-      var tier = valuesFor(pairs, 'tier_interest')[0];
+      var pkg = valuesFor(pairs, 'package_interest')[0];
       var services = valuesFor(pairs, 'services_needed');
+      var partnerServices = ['Company registration', 'BOI application', 'Visa application', 'Work permit', 'Accounting / bookkeeping'];
+      var partnerIntent = valuesFor(pairs, 'inquiry_intent')[0] === 'partner-quote';
+      var hasPartner = partnerIntent || services.some(function (v) { return partnerServices.indexOf(v) !== -1; });
+      var hasDirect = services.some(function (v) { return partnerServices.indexOf(v) === -1; });
+      var leadService = 'Not specified';
+      if (pkg && pkg !== 'Not sure yet') {
+        leadService = pkg;
+        if (services.indexOf('Content add-on (one-time)') !== -1) leadService += ' + content add-on';
+        if (hasPartner) leadService += ' + partner services';
+      }
+      else if (hasPartner && hasDirect) leadService = 'Digital and partner services';
+      else if (hasPartner) leadService = 'Partner services only';
+      else if (hasDirect) leadService = 'Digital services (no package)';
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push({
         event: 'generate_lead',
-        lead_service: tier ? tier : (services.length ? 'Custom mix' : 'Not specified'),
+        lead_service: leadService,
         lead_services_selected: services.join(', '),
         lead_language: valuesFor(pairs, 'website_language')[0] || '',
         lead_preferred_contact: valuesFor(pairs, 'preferred_contact')[0] || ''
@@ -450,22 +470,39 @@
       });
     });
 
-    var tierParam = new URLSearchParams(window.location.search).get('tier');
-    if (tierParam) {
-      var tierMap = {
-        '1': 'Tier 1 - Digital foundation',
-        '2': 'Tier 2 - Business launch',
-        '3': 'Tier 3 - Full concierge'
+    // Prefill from package and partner links; every choice stays editable.
+    // Legacy ?tier=1-3 links map to the nearest package. Old tiers 2 and 3 implied partner work,
+    // so they also pre-check the partner services instead of narrowing the inquiry to digital only.
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var partnerBase = ['Company registration', 'BOI application', 'Visa application', 'Work permit'];
+      var legacy = {
+        '1': { pkg: 'Launch', services: [] },
+        '2': { pkg: 'Growth', services: partnerBase },
+        '3': { pkg: 'Managed', services: partnerBase.concat(['Accounting / bookkeeping']) }
       };
-      var tierValue = tierMap[tierParam];
-      var tierRadio = tierValue && form.querySelector('input[name="tier_interest"][value="' + tierValue + '"]');
-      if (tierRadio) {
-        tierRadio.checked = true;
-        window.setTimeout(function () {
-          tierRadio.closest('fieldset').scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }, 300);
+      var pkgMap = { launch: 'Launch', growth: 'Growth', managed: 'Managed' };
+      var chosen = pkgMap[(params.get('package') || '').toLowerCase()];
+      var pre = [];
+      var old = legacy[params.get('tier')];
+      if (old && !chosen) { chosen = old.pkg; pre = old.services.slice(); }
+      if (params.get('content') === '1') pre.push('Content add-on (one-time)');
+      var focus = null;
+      if (chosen) {
+        var radio = form.querySelector('input[name="package_interest"][value="' + chosen + '"]');
+        if (radio) { radio.checked = true; focus = document.getElementById('package-group'); }
       }
-    }
+      pre.forEach(function (v) {
+        var box = form.querySelector('input[name="services_needed"][value="' + v + '"]');
+        if (box) box.checked = true;
+      });
+      if (params.get('service') === 'partner') {
+        focus = document.getElementById('partner-group');
+        form.elements.inquiry_intent.value = 'partner-quote';
+      }
+      else if (pre.length && !focus) focus = document.getElementById('services-group');
+      if (focus) window.setTimeout(function () { focus.scrollIntoView({ behavior: 'smooth', block: 'center' }); }, 300);
+    })();
   </script>
   <script src="../js/contact-tracking.js" defer></script>
   <script src="../js/lang-switch.js" defer></script>

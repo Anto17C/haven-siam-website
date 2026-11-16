@@ -13,7 +13,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact — Lancez votre projet en Thaïlande — Haven Siam</title>
-  <meta name="description" content="Dites-nous où vous en êtes — choisissez une formule, combinez des services spécifiques, ou posez simplement une question. Nous répondrons sous un jour ouvré.">
+  <meta name="description" content="Dites-nous où vous en êtes — choisissez une formule de site web, ajoutez un soutien au contenu, demandez des services partenaires, ou posez simplement une question. Nous revenons vers vous sous un jour ouvré.">
   <link rel="canonical" href="https://havensiam.com/fr/contact">
   <link rel="alternate" hreflang="en" href="https://havensiam.com/contact">
   <link rel="alternate" hreflang="th" href="https://havensiam.com/th/contact">
@@ -127,6 +127,7 @@
         <div hidden><input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off" aria-label="Leave unchecked"></div>
         <input type="hidden" name="website_language" value="French">
         <input type="hidden" name="source_page" value="">
+        <input type="hidden" name="inquiry_intent" value="">
         <div id="formSuccess" class="form-success" role="status" aria-live="polite">Merci — votre demande a bien été envoyée. Nous examinerons les détails et vous répondrons sous un jour ouvré.</div>
         <div id="formError" class="form-error" role="alert" aria-live="assertive"></div>
 
@@ -157,53 +158,60 @@
           </div>
         </div>
 
-        <fieldset class="form-fieldset">
-          <legend>Quelle formule vous intéresse ?</legend>
-          <p class="form-hint">Pas encore sûr ? Laissez ce champ vide et dites-le-nous dans le message ci-dessous.</p>
+        <fieldset class="form-fieldset" id="package-group">
+          <legend>Quelle formule de site web vous intéresse ?</legend>
+          <p class="form-hint">Facultatif. Pas encore sûr ? Laissez ce champ vide et dites-le-nous dans le message ci-dessous.</p>
           <div class="radio-grid">
             <label class="radio-option">
-              <input type="radio" name="tier_interest" value="Tier 1 - Digital foundation">
+              <input type="radio" name="package_interest" value="Launch">
               <span>
-                <strong>Formule 1 — Fondation numérique</strong>
-                <small>Site web, nom de domaine, hébergement, e-mail professionnel, CRM, SEO, visibilité dans la recherche IA et analytics.</small>
+                <strong>Launch</strong>
+                <small>Jusqu'à 5 pages en 1 à 2 langues, en ligne et professionnel.</small>
               </span>
             </label>
             <label class="radio-option">
-              <input type="radio" name="tier_interest" value="Tier 2 - Business launch">
+              <input type="radio" name="package_interest" value="Growth">
               <span>
-                <strong>Formule 2 — Lancement d'entreprise</strong>
-                <small>Formule 1 plus création d'entreprise, BOI, visa et permis de travail avec des partenaires thaïlandais.</small>
+                <strong>Growth</strong>
+                <small>Jusqu'à 12 pages en 4 langues maximum, avec plan de référencement et suivi des demandes.</small>
               </span>
             </label>
             <label class="radio-option">
-              <input type="radio" name="tier_interest" value="Tier 3 - Full concierge">
+              <input type="radio" name="package_interest" value="Managed">
               <span>
-                <strong>Formule 3 — Accompagnement complet</strong>
-                <small>Formule 2 plus comptabilité, déclarations fiscales et contenu multilingue.</small>
+                <strong>Managed</strong>
+                <small>Les fonctionnalités de Growth, plus les contenus de lancement et un forfait mensuel de Haven Siam.</small>
               </span>
             </label>
             <label class="radio-option">
-              <input type="radio" name="tier_interest" value="Not sure yet">
+              <input type="radio" name="package_interest" value="Not sure yet">
               <span>Pas encore sûr</span>
             </label>
           </div>
         </fieldset>
 
-        <fieldset class="form-fieldset">
-          <legend>Ou, services spécifiques dont vous avez besoin (cochez-en autant que vous voulez)</legend>
+        <fieldset class="form-fieldset" id="services-group">
+          <legend>Avec quoi pouvons-nous vous aider ? (cochez tout ce qui convient)</legend>
+          <p class="form-hint">Une formule, un soutien au contenu, des services partenaires, ou un mélange.</p>
+          <p class="form-group-label">Réalisé par Haven Siam</p>
           <div class="checkbox-grid">
-            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Website design"><span>Conception de site web</span></label>
-            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Domain registration"><span>Enregistrement de domaine</span></label>
-            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Web hosting"><span>Hébergement web</span></label>
-            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Email hosting"><span>Hébergement e-mail</span></label>
-            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="CRM integration"><span>Intégration CRM</span></label>
-            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="SEO &amp; Analytics"><span>SEO, visibilité dans la recherche IA et analytics</span></label>
+            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Website design and build"><span>Conception et création de site web</span></label>
+            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Domain, hosting and business email"><span>Domaine, hébergement et e-mail professionnel</span></label>
+            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Search and analytics setup"><span>Configuration du référencement et des analytics</span></label>
+            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Content add-on (one-time)"><span>Complément de contenu (ponctuel) : rédiger, optimiser ou localiser les textes de lancement</span></label>
+            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Ongoing content support (monthly)"><span>Soutien continu au contenu (mensuel)</span></label>
+            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="CRM integration"><span>Intégration CRM (chiffrée séparément)</span></label>
+          </div>
+          <div id="partner-group">
+            <p class="form-group-label">Coordonné avec des partenaires agréés</p>
+            <div class="checkbox-grid">
             <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Company registration"><span>Enregistrement de société</span></label>
             <label class="checkbox-option"><input type="checkbox" name="services_needed" value="BOI application"><span>Demande BOI</span></label>
             <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Visa application"><span>Demande de visa</span></label>
             <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Work permit"><span>Permis de travail</span></label>
             <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Accounting / bookkeeping"><span>Comptabilité / tenue de livres</span></label>
-            <label class="checkbox-option"><input type="checkbox" name="services_needed" value="Translation / content"><span>Traduction / contenu</span></label>
+            </div>
+            <p class="form-hint">Les demandes partenaires arrivent d'abord chez Haven Siam : nous précisons le périmètre et vous présentons le bon partenaire.</p>
           </div>
         </fieldset>
 
@@ -243,7 +251,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="logo footer-logo"><img src="../assets/logo-assets/logo.svg" alt="Haven Siam" width="430" height="96" loading="lazy"></div>
-        <p>Un centre de coordination pour les entrepreneurs qui s'installent, eux-mêmes ou leur entreprise, en Thaïlande — site web, domaine, création d'entreprise et BOI, visa et comptabilité, en un seul endroit.</p>
+        <p>Sites web et contenus pour les entreprises en Thaïlande, réalisés directement par Haven Siam — avec des partenaires agréés coordonnés pour la création de société, le BOI, les visas et la comptabilité.</p>
       </div>
       <div class="footer-col">
         <h4>Explorer</h4>
@@ -260,10 +268,9 @@
       <div class="footer-col">
         <h4>Services</h4>
         <a href="services#digital">Fondation numérique</a>
-        <a href="services#formation">Création d'entreprise</a>
-        <a href="services#financial">Comptabilité</a>
         <a href="services#content">Contenu et localisation</a>
         <a href="website-seo-services-rayong">Site web et SEO</a>
+        <a href="pricing#partners">Services partenaires</a>
       </div>
       <div class="footer-col">
         <h4>Contact</h4>
@@ -388,12 +395,25 @@
     }
 
     function trackLead(pairs) {
-      var tier = valuesFor(pairs, 'tier_interest')[0];
+      var pkg = valuesFor(pairs, 'package_interest')[0];
       var services = valuesFor(pairs, 'services_needed');
+      var partnerServices = ['Company registration', 'BOI application', 'Visa application', 'Work permit', 'Accounting / bookkeeping'];
+      var partnerIntent = valuesFor(pairs, 'inquiry_intent')[0] === 'partner-quote';
+      var hasPartner = partnerIntent || services.some(function (v) { return partnerServices.indexOf(v) !== -1; });
+      var hasDirect = services.some(function (v) { return partnerServices.indexOf(v) === -1; });
+      var leadService = 'Not specified';
+      if (pkg && pkg !== 'Not sure yet') {
+        leadService = pkg;
+        if (services.indexOf('Content add-on (one-time)') !== -1) leadService += ' + content add-on';
+        if (hasPartner) leadService += ' + partner services';
+      }
+      else if (hasPartner && hasDirect) leadService = 'Digital and partner services';
+      else if (hasPartner) leadService = 'Partner services only';
+      else if (hasDirect) leadService = 'Digital services (no package)';
       window.dataLayer = window.dataLayer || [];
       window.dataLayer.push({
         event: 'generate_lead',
-        lead_service: tier ? tier : (services.length ? 'Custom mix' : 'Not specified'),
+        lead_service: leadService,
         lead_services_selected: services.join(', '),
         lead_language: valuesFor(pairs, 'website_language')[0] || '',
         lead_preferred_contact: valuesFor(pairs, 'preferred_contact')[0] || ''
@@ -460,22 +480,39 @@
       });
     });
 
-    var tierParam = new URLSearchParams(window.location.search).get('tier');
-    if (tierParam) {
-      var tierMap = {
-        '1': 'Tier 1 - Digital foundation',
-        '2': 'Tier 2 - Business launch',
-        '3': 'Tier 3 - Full concierge'
+    // Prefill from package and partner links; every choice stays editable.
+    // Legacy ?tier=1-3 links map to the nearest package. Old tiers 2 and 3 implied partner work,
+    // so they also pre-check the partner services instead of narrowing the inquiry to digital only.
+    (function () {
+      var params = new URLSearchParams(window.location.search);
+      var partnerBase = ['Company registration', 'BOI application', 'Visa application', 'Work permit'];
+      var legacy = {
+        '1': { pkg: 'Launch', services: [] },
+        '2': { pkg: 'Growth', services: partnerBase },
+        '3': { pkg: 'Managed', services: partnerBase.concat(['Accounting / bookkeeping']) }
       };
-      var tierValue = tierMap[tierParam];
-      var tierRadio = tierValue && form.querySelector('input[name="tier_interest"][value="' + tierValue + '"]');
-      if (tierRadio) {
-        tierRadio.checked = true;
-        window.setTimeout(function () {
-          tierRadio.closest('fieldset').scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }, 300);
+      var pkgMap = { launch: 'Launch', growth: 'Growth', managed: 'Managed' };
+      var chosen = pkgMap[(params.get('package') || '').toLowerCase()];
+      var pre = [];
+      var old = legacy[params.get('tier')];
+      if (old && !chosen) { chosen = old.pkg; pre = old.services.slice(); }
+      if (params.get('content') === '1') pre.push('Content add-on (one-time)');
+      var focus = null;
+      if (chosen) {
+        var radio = form.querySelector('input[name="package_interest"][value="' + chosen + '"]');
+        if (radio) { radio.checked = true; focus = document.getElementById('package-group'); }
       }
-    }
+      pre.forEach(function (v) {
+        var box = form.querySelector('input[name="services_needed"][value="' + v + '"]');
+        if (box) box.checked = true;
+      });
+      if (params.get('service') === 'partner') {
+        focus = document.getElementById('partner-group');
+        form.elements.inquiry_intent.value = 'partner-quote';
+      }
+      else if (pre.length && !focus) focus = document.getElementById('services-group');
+      if (focus) window.setTimeout(function () { focus.scrollIntoView({ behavior: 'smooth', block: 'center' }); }, 300);
+    })();
   </script>
   <script src="../js/contact-tracking.js" defer></script>
   <script src="../js/lang-switch.js" defer></script>
