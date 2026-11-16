@@ -1110,13 +1110,18 @@ img {
 .service-tag.direct { color: var(--teal-700); background: var(--teal-100); }
 .service-tag.partner { color: var(--coral-700); background: var(--coral-100); }
 
+.cta-band .btn + .btn,
+.cta-band .btn:has(+ .btn) {
+  margin: 6px;
+}
+
 .cta-also {
   margin-top: 14px;
   font-size: 14px;
 }
 
 .cta-also a {
-  color: var(--teal-100);
+  color: var(--teal-700);
   text-decoration: underline;
   text-underline-offset: 3px;
 }
