@@ -1188,6 +1188,13 @@ img {
   box-shadow: var(--shadow-lift);
 }
 
+a.info-card {
+  text-decoration: none;
+  color: inherit;
+}
+
+a.info-card:hover .info-card-link { color: var(--coral-600); }
+
 .info-card-icon {
   display: grid;
   place-items: center;
@@ -1223,6 +1230,8 @@ img {
 }
 
 .info-card-link {
+  color: var(--teal-700);
+  font-weight: 500;
   margin-top: auto;
   padding-top: 14px;
   font-size: 14px;
